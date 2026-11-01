@@ -1,0 +1,13 @@
+all_successful,all_verified,family,median_peak_rss_bytes,median_total_s,records,status_counts,strategy,success_rate,successful_records,verified_rate,verified_records
+True,True,arithmetic,65306624.0,0.055498542002169415,1,"{""ok"": 1}",adaptive,1.0,1,1.0,1
+True,True,arithmetic,45957120.0,0.005763249995652586,1,"{""ok"": 1}",fixed,1.0,1,1.0,1
+True,True,arithmetic,64421888.0,0.0505300420045387,1,"{""ok"": 1}",native,1.0,1,1.0,1
+True,True,graphstate,62980096.0,0.03614383298554458,1,"{""ok"": 1}",adaptive,1.0,1,1.0,1
+True,True,graphstate,49266688.0,0.012460124999051914,1,"{""ok"": 1}",fixed,1.0,1,1.0,1
+True,True,graphstate,62210048.0,0.03358583300723694,1,"{""ok"": 1}",native,1.0,1,1.0,1
+True,True,grover,69648384.0,0.3512073750025593,1,"{""ok"": 1}",adaptive,1.0,1,1.0,1
+True,True,grover,57966592.0,0.03220508300000802,1,"{""ok"": 1}",fixed,1.0,1,1.0,1
+True,True,grover,67436544.0,0.06769733299734071,1,"{""ok"": 1}",native,1.0,1,1.0,1
+True,True,iqp,64798720.0,0.0473582919803448,1,"{""ok"": 1}",adaptive,1.0,1,1.0,1
+True,True,iqp,53706752.0,0.01784708400373347,1,"{""ok"": 1}",fixed,1.0,1,1.0,1
+True,True,iqp,63979520.0,0.040428875014185905,1,"{""ok"": 1}",native,1.0,1,1.0,1

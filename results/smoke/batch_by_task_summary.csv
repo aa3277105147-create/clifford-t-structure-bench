@@ -1,0 +1,3 @@
+family,first_tested_shared_beats_independent_at_k,first_tested_shared_beats_quimb_cached_at_k,physical_qubits,task_id,tested_batch_sizes,unique_query_counts_by_batch_size
+graphstate,1,1,4,graphstate-n4-s0,"[1, 2]","{""1"": 1, ""2"": 2}"
+iqp,2,1,4,iqp-n4-s0,"[1, 2]","{""1"": 1, ""2"": 2}"

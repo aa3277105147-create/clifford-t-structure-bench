@@ -1,0 +1,232 @@
+{
+  "predictions": [
+    {
+      "task_id": "grover-n4-s0",
+      "family": "grover",
+      "heldout_family": "grover",
+      "policy": "fixed",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.002047083980869502,
+      "feature_extraction_s": 0.0,
+      "predicted_log10_costs": {
+        "fixed": 0.0
+      },
+      "selector_total_s_estimate": 0.002047083980869502,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "grover-n4-s0",
+      "family": "grover",
+      "heldout_family": "grover",
+      "policy": "raw",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.002047083980869502,
+      "feature_extraction_s": 5.1333976443856955e-05,
+      "predicted_log10_costs": {
+        "quimb": -1.3280775176815889,
+        "statevector": -2.7750171185268555,
+        "mitm": -1.5265434615980915
+      },
+      "selector_total_s_estimate": 0.002098417957313359,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "grover-n4-s0",
+      "family": "grover",
+      "heldout_family": "grover",
+      "policy": "effective",
+      "selected_backend": "mitm",
+      "selected_status": "ok",
+      "selected_backend_s": 0.34547733401996084,
+      "feature_extraction_s": 0.00048320897622033954,
+      "predicted_log10_costs": {
+        "quimb": -1.407333751760996,
+        "statevector": -2.9229179284776947,
+        "mitm": -3.476050048002098
+      },
+      "selector_total_s_estimate": 0.3459605429961812,
+      "oracle_backend": "statevector",
+      "oracle_regret": 168.7655891250826
+    },
+    {
+      "task_id": "arithmetic-n4-s0",
+      "family": "arithmetic",
+      "heldout_family": "arithmetic",
+      "policy": "fixed",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0019417080038692802,
+      "feature_extraction_s": 0.0,
+      "predicted_log10_costs": {
+        "fixed": 0.0
+      },
+      "selector_total_s_estimate": 0.0019417080038692802,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "arithmetic-n4-s0",
+      "family": "arithmetic",
+      "heldout_family": "arithmetic",
+      "policy": "raw",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0019417080038692802,
+      "feature_extraction_s": 4.808299127034843e-05,
+      "predicted_log10_costs": {
+        "quimb": -1.0187469945918963,
+        "statevector": -2.553042625520867,
+        "mitm": 0.7566882511356878
+      },
+      "selector_total_s_estimate": 0.0019897909951396286,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "arithmetic-n4-s0",
+      "family": "arithmetic",
+      "heldout_family": "arithmetic",
+      "policy": "effective",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0019417080038692802,
+      "feature_extraction_s": 0.00038487400161102414,
+      "predicted_log10_costs": {
+        "quimb": -1.173630569688566,
+        "statevector": -2.6851077652153776,
+        "mitm": -1.02956833465156
+      },
+      "selector_total_s_estimate": 0.0023265820054803044,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "iqp-n4-s0",
+      "family": "iqp",
+      "heldout_family": "iqp",
+      "policy": "fixed",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0013069169945083559,
+      "feature_extraction_s": 0.0,
+      "predicted_log10_costs": {
+        "fixed": 0.0
+      },
+      "selector_total_s_estimate": 0.0013069169945083559,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "iqp-n4-s0",
+      "family": "iqp",
+      "heldout_family": "iqp",
+      "policy": "raw",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0013069169945083559,
+      "feature_extraction_s": 2.4833978386595845e-05,
+      "predicted_log10_costs": {
+        "quimb": -1.3592464371732529,
+        "statevector": -2.84919269604469,
+        "mitm": -1.8048902027278502
+      },
+      "selector_total_s_estimate": 0.0013317509728949517,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "iqp-n4-s0",
+      "family": "iqp",
+      "heldout_family": "iqp",
+      "policy": "effective",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0013069169945083559,
+      "feature_extraction_s": 0.00022870898828841746,
+      "predicted_log10_costs": {
+        "quimb": -1.3958678663501847,
+        "statevector": -2.8471358396940167,
+        "mitm": -1.7781286785509811
+      },
+      "selector_total_s_estimate": 0.0015356259827967733,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "graphstate-n4-s0",
+      "family": "graphstate",
+      "heldout_family": "graphstate",
+      "policy": "fixed",
+      "selected_backend": "statevector",
+      "selected_status": "ok",
+      "selected_backend_s": 0.0010833330161403865,
+      "feature_extraction_s": 0.0,
+      "predicted_log10_costs": {
+        "fixed": 0.0
+      },
+      "selector_total_s_estimate": 0.0010833330161403865,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.0
+    },
+    {
+      "task_id": "graphstate-n4-s0",
+      "family": "graphstate",
+      "heldout_family": "graphstate",
+      "policy": "raw",
+      "selected_backend": "mitm",
+      "selected_status": "ok",
+      "selected_backend_s": 0.001649167010327801,
+      "feature_extraction_s": 1.5541998436674476e-05,
+      "predicted_log10_costs": {
+        "quimb": -1.468443035349576,
+        "statevector": -2.984087770990979,
+        "mitm": -3.9859230000018444
+      },
+      "selector_total_s_estimate": 0.0016647090087644756,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.5223084552553594
+    },
+    {
+      "task_id": "graphstate-n4-s0",
+      "family": "graphstate",
+      "heldout_family": "graphstate",
+      "policy": "effective",
+      "selected_backend": "mitm",
+      "selected_status": "ok",
+      "selected_backend_s": 0.001649167010327801,
+      "feature_extraction_s": 0.00017754198051989079,
+      "predicted_log10_costs": {
+        "quimb": -1.4357291132362273,
+        "statevector": -2.97283399982619,
+        "mitm": -3.8733602698967493
+      },
+      "selector_total_s_estimate": 0.001826708990847692,
+      "oracle_backend": "statevector",
+      "oracle_regret": 1.5223084552553594
+    }
+  ],
+  "summary": {
+    "fixed": {
+      "tasks": 4,
+      "completed": 4,
+      "median_estimated_total_s": 0.001624312499188818,
+      "median_oracle_regret": 1.0
+    },
+    "raw": {
+      "tasks": 4,
+      "completed": 4,
+      "median_estimated_total_s": 0.0018272500019520521,
+      "median_oracle_regret": 1.0
+    },
+    "effective": {
+      "tasks": 4,
+      "completed": 4,
+      "median_estimated_total_s": 0.002076645498163998,
+      "median_oracle_regret": 1.2611542276276797
+    }
+  }
+}

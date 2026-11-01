@@ -1,0 +1,9 @@
+family,first_tested_shared_beats_independent_at_k,first_tested_shared_beats_quimb_cached_at_k,physical_qubits,task_id,tested_batch_sizes,unique_query_counts_by_batch_size
+graphstate,1,1,28,graphstate-n10-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 7, ""32"": 12, ""128"": 16}"
+graphstate,1,1,4,graphstate-n4-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 7, ""32"": 12, ""128"": 16}"
+graphstate,1,1,12,graphstate-n6-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 7, ""32"": 12, ""128"": 16}"
+graphstate,1,1,20,graphstate-n8-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 7, ""32"": 12, ""128"": 16}"
+iqp,8,1,10,iqp-n10-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 8, ""32"": 32, ""128"": 128}"
+iqp,1,1,4,iqp-n4-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 8, ""32"": 31, ""128"": 121}"
+iqp,1,1,6,iqp-n6-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 8, ""32"": 32, ""128"": 128}"
+iqp,1,1,8,iqp-n8-s0,"[1, 8, 32, 128]","{""1"": 1, ""8"": 8, ""32"": 32, ""128"": 128}"

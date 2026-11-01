@@ -1,0 +1,2298 @@
+{
+  "experiment": "pilot",
+  "task_count": 48,
+  "family_counts": {
+    "grover": 12,
+    "arithmetic": 12,
+    "iqp": 12,
+    "graphstate": 12
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "logical_cpus": 10,
+    "physical_memory_bytes": 17179869184,
+    "versions": {
+      "numpy": "2.5.4",
+      "quimb": "1.15.0",
+      "cotengra": "0.8.3",
+      "qiskit": "2.6.1",
+      "networkx": "3.7",
+      "psutil": "7.2.2",
+      "matplotlib": "3.11.2"
+    },
+    "threads": 1,
+    "process_start_method": "forkserver",
+    "timing_scope": "JSON task parsing through route/preprocess/plan/evaluate; common dependency import/startup separately recorded",
+    "memory_scope": "individual job process peak RSS, including shared imported libraries; parent/forkserver excluded",
+    "memory_enforcement": "RSS sampled every 5 ms plus final OS high-water mark; polling can overshoot the threshold",
+    "created_at_utc": "2026-10-31T16:51:36Z"
+  },
+  "records": {
+    "preprocess": {
+      "records": 432,
+      "status_counts": {
+        "ok": 432
+      },
+      "verified_records": 405
+    },
+    "backends": {
+      "records": 432,
+      "status_counts": {
+        "ok": 369,
+        "unsupported": 54,
+        "memory_limit": 9
+      },
+      "verified_records": 351
+    },
+    "selector_replay": {
+      "records": 432,
+      "status_counts": {
+        "ok": 396,
+        "unsupported": 27,
+        "memory_limit": 9
+      },
+      "verified_records": 369
+    },
+    "batch": {
+      "records": 288,
+      "status_counts": {
+        "ok": 288
+      },
+      "verified_records": 288
+    },
+    "references": {
+      "records": 48,
+      "reference_kinds": {
+        "exact_reduced_pathsum": 39,
+        "independent_numpy_statevector": 6,
+        "unavailable": 3
+      },
+      "crosscheck_failures": 0
+    }
+  },
+  "timing_accounting": {
+    "preprocess": {
+      "records_with_total_s": 432,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 6.562497583217919e-05,
+      "max_other_s": 0.0016850859974510968,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "backends": {
+      "records_with_total_s": 432,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 3.15000070258975e-05,
+      "max_other_s": 0.0016023750067688525,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "selection_replay": {
+      "records_with_total_s": 432,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 8.212501415982842e-05,
+      "max_other_s": 0.003701833018567413,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "batch": {
+      "records_with_total_s": 288,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 3.033402026630938e-05,
+      "max_other_s": 0.0034581191430334,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "all_experiments": {
+      "records_with_total_s": 1584,
+      "min_other_s": 3.033402026630938e-05,
+      "max_other_s": 0.003701833018567413,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09,
+      "residual_definition": "total_s minus sum of top-level timings_s fields; nested selector routing timers are included in other_s"
+    }
+  },
+  "paired_verified_preprocess": {
+    "fixed": {
+      "matched_verified_tasks": 45,
+      "median_baseline_over_candidate": 2.7528871146449987,
+      "faster_candidate_tasks": 39,
+      "slower_candidate_tasks": 6,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n10-s0",
+          "baseline": 0.08362300001317635,
+          "candidate": 0.008373415999813005,
+          "baseline_over_candidate": 9.98672465515195
+        },
+        {
+          "task_id": "arithmetic-n10-s1",
+          "baseline": 0.0836496249830816,
+          "candidate": 0.008704957988811657,
+          "baseline_over_candidate": 9.609423169025643
+        },
+        {
+          "task_id": "arithmetic-n10-s2",
+          "baseline": 0.08535391700570472,
+          "candidate": 0.008349000010639429,
+          "baseline_over_candidate": 10.223250317036193
+        },
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.052093250007601455,
+          "candidate": 0.0060714999854099005,
+          "baseline_over_candidate": 8.579963787002221
+        },
+        {
+          "task_id": "arithmetic-n4-s1",
+          "baseline": 0.0517367499996908,
+          "candidate": 0.00595900000189431,
+          "baseline_over_candidate": 8.682119480322902
+        },
+        {
+          "task_id": "arithmetic-n4-s2",
+          "baseline": 0.05167920800158754,
+          "candidate": 0.005798875004984438,
+          "baseline_over_candidate": 8.911936876922944
+        },
+        {
+          "task_id": "arithmetic-n6-s0",
+          "baseline": 0.06162220798432827,
+          "candidate": 0.006662792002316564,
+          "baseline_over_candidate": 9.248706542678061
+        },
+        {
+          "task_id": "arithmetic-n6-s1",
+          "baseline": 0.062230833020294085,
+          "candidate": 0.006542207993334159,
+          "baseline_over_candidate": 9.512206442182967
+        },
+        {
+          "task_id": "arithmetic-n6-s2",
+          "baseline": 0.061816749977879226,
+          "candidate": 0.006735917006153613,
+          "baseline_over_candidate": 9.177184030237662
+        },
+        {
+          "task_id": "arithmetic-n8-s0",
+          "baseline": 0.07318058397504501,
+          "candidate": 0.007358709000982344,
+          "baseline_over_candidate": 9.944758512026477
+        },
+        {
+          "task_id": "arithmetic-n8-s1",
+          "baseline": 0.07333554199431092,
+          "candidate": 0.007300500001292676,
+          "baseline_over_candidate": 10.045276622330748
+        },
+        {
+          "task_id": "arithmetic-n8-s2",
+          "baseline": 0.07286604098044336,
+          "candidate": 0.007364666002104059,
+          "baseline_over_candidate": 9.894004827866707
+        },
+        {
+          "task_id": "graphstate-n10-s0",
+          "baseline": 0.04585041600512341,
+          "candidate": 0.013152291998267174,
+          "baseline_over_candidate": 3.486116032944238
+        },
+        {
+          "task_id": "graphstate-n10-s1",
+          "baseline": 0.04773379198741168,
+          "candidate": 0.013463333016261458,
+          "baseline_over_candidate": 3.5454661880351046
+        },
+        {
+          "task_id": "graphstate-n10-s2",
+          "baseline": 0.0473217079997994,
+          "candidate": 0.013084041012916714,
+          "baseline_over_candidate": 3.6167502037851205
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.034164665994467214,
+          "candidate": 0.012863832991570234,
+          "baseline_over_candidate": 2.655869834197597
+        },
+        {
+          "task_id": "graphstate-n4-s1",
+          "baseline": 0.0356126660190057,
+          "candidate": 0.012680374988121912,
+          "baseline_over_candidate": 2.8084868193854797
+        },
+        {
+          "task_id": "graphstate-n4-s2",
+          "baseline": 0.03559850002056919,
+          "candidate": 0.012931333010783419,
+          "baseline_over_candidate": 2.7528871146449987
+        },
+        {
+          "task_id": "graphstate-n6-s0",
+          "baseline": 0.04138454201165587,
+          "candidate": 0.01296791699132882,
+          "baseline_over_candidate": 3.191302199060051
+        },
+        {
+          "task_id": "graphstate-n6-s1",
+          "baseline": 0.0414095830055885,
+          "candidate": 0.013035332987783477,
+          "baseline_over_candidate": 3.1767184654505534
+        },
+        {
+          "task_id": "graphstate-n6-s2",
+          "baseline": 0.04124470899114385,
+          "candidate": 0.012944332993356511,
+          "baseline_over_candidate": 3.1863139655254615
+        },
+        {
+          "task_id": "graphstate-n8-s0",
+          "baseline": 0.04304491699440405,
+          "candidate": 0.012993917014682665,
+          "baseline_over_candidate": 3.312697544994694
+        },
+        {
+          "task_id": "graphstate-n8-s1",
+          "baseline": 0.04423879200476222,
+          "candidate": 0.012813250010367483,
+          "baseline_over_candidate": 3.4525816610904836
+        },
+        {
+          "task_id": "graphstate-n8-s2",
+          "baseline": 0.044154209026601166,
+          "candidate": 0.01311712499591522,
+          "baseline_over_candidate": 3.3661499025397066
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.10280637501273304,
+          "candidate": 0.05052679099026136,
+          "baseline_over_candidate": 2.0346903691656997
+        },
+        {
+          "task_id": "grover-n4-s1",
+          "baseline": 0.09990529200877063,
+          "candidate": 0.04633474998991005,
+          "baseline_over_candidate": 2.156163398540538
+        },
+        {
+          "task_id": "grover-n4-s2",
+          "baseline": 0.1022939579852391,
+          "candidate": 0.050502541998866946,
+          "baseline_over_candidate": 2.025520972539048
+        },
+        {
+          "task_id": "grover-n6-s0",
+          "baseline": 0.23324804098228924,
+          "candidate": 0.11854958298499696,
+          "baseline_over_candidate": 1.9675146475361953
+        },
+        {
+          "task_id": "grover-n6-s1",
+          "baseline": 0.21531266599777155,
+          "candidate": 0.1280349590233527,
+          "baseline_over_candidate": 1.6816709095716582
+        },
+        {
+          "task_id": "grover-n6-s2",
+          "baseline": 0.22840583400102332,
+          "candidate": 0.12274562500533648,
+          "baseline_over_candidate": 1.860806313798094
+        },
+        {
+          "task_id": "grover-n8-s0",
+          "baseline": 0.36045420801383443,
+          "candidate": 0.20368566701654345,
+          "baseline_over_candidate": 1.769659167940168
+        },
+        {
+          "task_id": "grover-n8-s1",
+          "baseline": 0.3896737079776358,
+          "candidate": 0.1941615410032682,
+          "baseline_over_candidate": 2.0069561972166086
+        },
+        {
+          "task_id": "grover-n8-s2",
+          "baseline": 0.35272829100722447,
+          "candidate": 0.1996182499860879,
+          "baseline_over_candidate": 1.7670142435965015
+        },
+        {
+          "task_id": "iqp-n10-s0",
+          "baseline": 0.12616929100477137,
+          "candidate": 0.18904933400335722,
+          "baseline_over_candidate": 0.6673881802859501
+        },
+        {
+          "task_id": "iqp-n10-s1",
+          "baseline": 0.12624108398449607,
+          "candidate": 0.1636360419797711,
+          "baseline_over_candidate": 0.7714748074883292
+        },
+        {
+          "task_id": "iqp-n10-s2",
+          "baseline": 0.14141279202885926,
+          "candidate": 0.17880420800065622,
+          "baseline_over_candidate": 0.7908806711547878
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.041663542011519894,
+          "candidate": 0.01980954100145027,
+          "baseline_over_candidate": 2.103205824328271
+        },
+        {
+          "task_id": "iqp-n4-s1",
+          "baseline": 0.037602500000502914,
+          "candidate": 0.0198465830180794,
+          "baseline_over_candidate": 1.8946586405452577
+        },
+        {
+          "task_id": "iqp-n4-s2",
+          "baseline": 0.03790016597486101,
+          "candidate": 0.026716375024989247,
+          "baseline_over_candidate": 1.4186118415919438
+        },
+        {
+          "task_id": "iqp-n6-s0",
+          "baseline": 0.051996000023791566,
+          "candidate": 0.1036396250128746,
+          "baseline_over_candidate": 0.5017000014939497
+        },
+        {
+          "task_id": "iqp-n6-s1",
+          "baseline": 0.11496937501942739,
+          "candidate": 0.10451108298730105,
+          "baseline_over_candidate": 1.1000687365702364
+        },
+        {
+          "task_id": "iqp-n6-s2",
+          "baseline": 0.06764504199963994,
+          "candidate": 0.10519837500760332,
+          "baseline_over_candidate": 0.6430236398114594
+        },
+        {
+          "task_id": "iqp-n8-s0",
+          "baseline": 0.1391836249968037,
+          "candidate": 0.1219324580160901,
+          "baseline_over_candidate": 1.1414813353343305
+        },
+        {
+          "task_id": "iqp-n8-s1",
+          "baseline": 0.13685379098751582,
+          "candidate": 0.13367754098726436,
+          "baseline_over_candidate": 1.023760535814719
+        },
+        {
+          "task_id": "iqp-n8-s2",
+          "baseline": 0.05496629199478775,
+          "candidate": 0.09401454098406248,
+          "baseline_over_candidate": 0.5846573457621385
+        }
+      ]
+    },
+    "adaptive": {
+      "matched_verified_tasks": 45,
+      "median_baseline_over_candidate": 0.7943228453221421,
+      "faster_candidate_tasks": 0,
+      "slower_candidate_tasks": 45,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n10-s0",
+          "baseline": 0.08362300001317635,
+          "candidate": 0.10527583400835283,
+          "baseline_over_candidate": 0.7943228453221421
+        },
+        {
+          "task_id": "arithmetic-n10-s1",
+          "baseline": 0.0836496249830816,
+          "candidate": 0.10553820899804123,
+          "baseline_over_candidate": 0.7926003840432247
+        },
+        {
+          "task_id": "arithmetic-n10-s2",
+          "baseline": 0.08535391700570472,
+          "candidate": 0.10718633298529312,
+          "baseline_over_candidate": 0.7963134350105624
+        },
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.052093250007601455,
+          "candidate": 0.06132845798856579,
+          "baseline_over_candidate": 0.8494139868527892
+        },
+        {
+          "task_id": "arithmetic-n4-s1",
+          "baseline": 0.0517367499996908,
+          "candidate": 0.06103750001057051,
+          "baseline_over_candidate": 0.8476223631493918
+        },
+        {
+          "task_id": "arithmetic-n4-s2",
+          "baseline": 0.05167920800158754,
+          "candidate": 0.06120133399963379,
+          "baseline_over_candidate": 0.8444130973010616
+        },
+        {
+          "task_id": "arithmetic-n6-s0",
+          "baseline": 0.06162220798432827,
+          "candidate": 0.07536374998744577,
+          "baseline_over_candidate": 0.8176637706403066
+        },
+        {
+          "task_id": "arithmetic-n6-s1",
+          "baseline": 0.062230833020294085,
+          "candidate": 0.07586599999922328,
+          "baseline_over_candidate": 0.8202730211284529
+        },
+        {
+          "task_id": "arithmetic-n6-s2",
+          "baseline": 0.061816749977879226,
+          "candidate": 0.07644258299842477,
+          "baseline_over_candidate": 0.8086690369836543
+        },
+        {
+          "task_id": "arithmetic-n8-s0",
+          "baseline": 0.07318058397504501,
+          "candidate": 0.08976487501058728,
+          "baseline_over_candidate": 0.815247433546961
+        },
+        {
+          "task_id": "arithmetic-n8-s1",
+          "baseline": 0.07333554199431092,
+          "candidate": 0.09010695799952373,
+          "baseline_over_candidate": 0.8138721317692086
+        },
+        {
+          "task_id": "arithmetic-n8-s2",
+          "baseline": 0.07286604098044336,
+          "candidate": 0.08919025000068359,
+          "baseline_over_candidate": 0.8169731666845298
+        },
+        {
+          "task_id": "graphstate-n10-s0",
+          "baseline": 0.04585041600512341,
+          "candidate": 0.050211708003189415,
+          "baseline_over_candidate": 0.9131419310056336
+        },
+        {
+          "task_id": "graphstate-n10-s1",
+          "baseline": 0.04773379198741168,
+          "candidate": 0.05154645899892785,
+          "baseline_over_candidate": 0.9260343564706264
+        },
+        {
+          "task_id": "graphstate-n10-s2",
+          "baseline": 0.0473217079997994,
+          "candidate": 0.0509329579945188,
+          "baseline_over_candidate": 0.9290979723756074
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.034164665994467214,
+          "candidate": 0.03758424997795373,
+          "baseline_over_candidate": 0.9090155055510649
+        },
+        {
+          "task_id": "graphstate-n4-s1",
+          "baseline": 0.0356126660190057,
+          "candidate": 0.03853099999832921,
+          "baseline_over_candidate": 0.9242601027886623
+        },
+        {
+          "task_id": "graphstate-n4-s2",
+          "baseline": 0.03559850002056919,
+          "candidate": 0.038163416989846155,
+          "baseline_over_candidate": 0.9327912128528901
+        },
+        {
+          "task_id": "graphstate-n6-s0",
+          "baseline": 0.04138454201165587,
+          "candidate": 0.043840166996233165,
+          "baseline_over_candidate": 0.9439868697400653
+        },
+        {
+          "task_id": "graphstate-n6-s1",
+          "baseline": 0.0414095830055885,
+          "candidate": 0.044859582994831726,
+          "baseline_over_candidate": 0.9230933557799523
+        },
+        {
+          "task_id": "graphstate-n6-s2",
+          "baseline": 0.04124470899114385,
+          "candidate": 0.04494108399376273,
+          "baseline_over_candidate": 0.9177506487575624
+        },
+        {
+          "task_id": "graphstate-n8-s0",
+          "baseline": 0.04304491699440405,
+          "candidate": 0.04624125000555068,
+          "baseline_over_candidate": 0.9308770197439957
+        },
+        {
+          "task_id": "graphstate-n8-s1",
+          "baseline": 0.04423879200476222,
+          "candidate": 0.04767754199565388,
+          "baseline_over_candidate": 0.9278748474238641
+        },
+        {
+          "task_id": "graphstate-n8-s2",
+          "baseline": 0.044154209026601166,
+          "candidate": 0.04752383299637586,
+          "baseline_over_candidate": 0.9290961238326113
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.10280637501273304,
+          "candidate": 1.1346762090106495,
+          "baseline_over_candidate": 0.09060415138374348
+        },
+        {
+          "task_id": "grover-n4-s1",
+          "baseline": 0.09990529200877063,
+          "candidate": 1.0738953340041917,
+          "baseline_over_candidate": 0.0930307534126791
+        },
+        {
+          "task_id": "grover-n4-s2",
+          "baseline": 0.1022939579852391,
+          "candidate": 1.2580275000073016,
+          "baseline_over_candidate": 0.0813129744656976
+        },
+        {
+          "task_id": "grover-n6-s0",
+          "baseline": 0.23324804098228924,
+          "candidate": 3.1962935409974307,
+          "baseline_over_candidate": 0.07297453690986785
+        },
+        {
+          "task_id": "grover-n6-s1",
+          "baseline": 0.21531266599777155,
+          "candidate": 3.0320012499869335,
+          "baseline_over_candidate": 0.07101338299207477
+        },
+        {
+          "task_id": "grover-n6-s2",
+          "baseline": 0.22840583400102332,
+          "candidate": 2.824468707985943,
+          "baseline_over_candidate": 0.08086683111596366
+        },
+        {
+          "task_id": "grover-n8-s0",
+          "baseline": 0.36045420801383443,
+          "candidate": 4.680765124998288,
+          "baseline_over_candidate": 0.07700754008971263
+        },
+        {
+          "task_id": "grover-n8-s1",
+          "baseline": 0.3896737079776358,
+          "candidate": 4.589348667010199,
+          "baseline_over_candidate": 0.08490828138178802
+        },
+        {
+          "task_id": "grover-n8-s2",
+          "baseline": 0.35272829100722447,
+          "candidate": 4.684906250011409,
+          "baseline_over_candidate": 0.0752903627487456
+        },
+        {
+          "task_id": "iqp-n10-s0",
+          "baseline": 0.12616929100477137,
+          "candidate": 0.798448624991579,
+          "baseline_over_candidate": 0.15801804531393868
+        },
+        {
+          "task_id": "iqp-n10-s1",
+          "baseline": 0.12624108398449607,
+          "candidate": 0.682804500014754,
+          "baseline_over_candidate": 0.18488613355912015
+        },
+        {
+          "task_id": "iqp-n10-s2",
+          "baseline": 0.14141279202885926,
+          "candidate": 0.7519077920005657,
+          "baseline_over_candidate": 0.18807198639690764
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.041663542011519894,
+          "candidate": 0.0559435419854708,
+          "baseline_over_candidate": 0.7447426554139244
+        },
+        {
+          "task_id": "iqp-n4-s1",
+          "baseline": 0.037602500000502914,
+          "candidate": 0.053312292002374306,
+          "baseline_over_candidate": 0.7053251433802219
+        },
+        {
+          "task_id": "iqp-n4-s2",
+          "baseline": 0.03790016597486101,
+          "candidate": 0.05313575000036508,
+          "baseline_over_candidate": 0.7132705565386884
+        },
+        {
+          "task_id": "iqp-n6-s0",
+          "baseline": 0.051996000023791566,
+          "candidate": 0.3615097090078052,
+          "baseline_over_candidate": 0.143830162034926
+        },
+        {
+          "task_id": "iqp-n6-s1",
+          "baseline": 0.11496937501942739,
+          "candidate": 0.4210305000015069,
+          "baseline_over_candidate": 0.27306661873431
+        },
+        {
+          "task_id": "iqp-n6-s2",
+          "baseline": 0.06764504199963994,
+          "candidate": 0.39372291701147333,
+          "baseline_over_candidate": 0.17180874944515542
+        },
+        {
+          "task_id": "iqp-n8-s0",
+          "baseline": 0.1391836249968037,
+          "candidate": 0.5500159590155818,
+          "baseline_over_candidate": 0.25305379364975966
+        },
+        {
+          "task_id": "iqp-n8-s1",
+          "baseline": 0.13685379098751582,
+          "candidate": 0.593543499999214,
+          "baseline_over_candidate": 0.23057078543981538
+        },
+        {
+          "task_id": "iqp-n8-s2",
+          "baseline": 0.05496629199478775,
+          "candidate": 0.35586612499901094,
+          "baseline_over_candidate": 0.15445778098418478
+        }
+      ]
+    }
+  },
+  "paired_verified_selector": {
+    "raw": {
+      "matched_verified_tasks": 42,
+      "median_baseline_over_candidate": 26.060308401754178,
+      "faster_candidate_tasks": 36,
+      "slower_candidate_tasks": 6,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n10-s0",
+          "baseline": 0.08381566699245013,
+          "candidate": 0.05296441598329693,
+          "baseline_over_candidate": 1.582490157521657
+        },
+        {
+          "task_id": "arithmetic-n10-s1",
+          "baseline": 0.08431425000890158,
+          "candidate": 0.05471795899211429,
+          "baseline_over_candidate": 1.540888066037927
+        },
+        {
+          "task_id": "arithmetic-n10-s2",
+          "baseline": 0.08578258301713504,
+          "candidate": 0.05356254198704846,
+          "baseline_over_candidate": 1.601540551191119
+        },
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.05323016599868424,
+          "candidate": 0.0021374579810071737,
+          "baseline_over_candidate": 24.903491189848843
+        },
+        {
+          "task_id": "arithmetic-n4-s1",
+          "baseline": 0.05288162501528859,
+          "candidate": 0.002180125011363998,
+          "baseline_over_candidate": 24.256235188184522
+        },
+        {
+          "task_id": "arithmetic-n4-s2",
+          "baseline": 0.0525312919926364,
+          "candidate": 0.0022010419925209135,
+          "baseline_over_candidate": 23.866556008988667
+        },
+        {
+          "task_id": "arithmetic-n6-s0",
+          "baseline": 0.06239525001728907,
+          "candidate": 0.004240833019139245,
+          "baseline_over_candidate": 14.712970243273887
+        },
+        {
+          "task_id": "arithmetic-n6-s1",
+          "baseline": 0.0625097080192063,
+          "candidate": 0.004287542018573731,
+          "baseline_over_candidate": 14.579380854674497
+        },
+        {
+          "task_id": "arithmetic-n6-s2",
+          "baseline": 0.06195629099966027,
+          "candidate": 0.004266500007361174,
+          "baseline_over_candidate": 14.521572926934127
+        },
+        {
+          "task_id": "arithmetic-n8-s0",
+          "baseline": 0.07472941701416858,
+          "candidate": 0.0103007500001695,
+          "baseline_over_candidate": 7.254754946284386
+        },
+        {
+          "task_id": "arithmetic-n8-s1",
+          "baseline": 0.07383720800862648,
+          "candidate": 0.01020562500343658,
+          "baseline_over_candidate": 7.234952095904267
+        },
+        {
+          "task_id": "arithmetic-n8-s2",
+          "baseline": 0.07362066602217965,
+          "candidate": 0.010264582990203053,
+          "baseline_over_candidate": 7.172299750749377
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.0013561250234488398,
+          "candidate": 0.0019041670020669699,
+          "baseline_over_candidate": 0.7121880706769776
+        },
+        {
+          "task_id": "graphstate-n4-s1",
+          "baseline": 0.001437708007870242,
+          "candidate": 0.001864165998995304,
+          "baseline_over_candidate": 0.7712338968981827
+        },
+        {
+          "task_id": "graphstate-n4-s2",
+          "baseline": 0.0013301660073921084,
+          "candidate": 0.00182095798663795,
+          "baseline_over_candidate": 0.7304759457125121
+        },
+        {
+          "task_id": "graphstate-n6-s0",
+          "baseline": 0.002322415995877236,
+          "candidate": 0.001990415999898687,
+          "baseline_over_candidate": 1.1667993002444956
+        },
+        {
+          "task_id": "graphstate-n6-s1",
+          "baseline": 0.0022509169939439744,
+          "candidate": 0.0018898340058512986,
+          "baseline_over_candidate": 1.1910659809140336
+        },
+        {
+          "task_id": "graphstate-n6-s2",
+          "baseline": 0.002148875006241724,
+          "candidate": 0.0018685830000322312,
+          "baseline_over_candidate": 1.1500024383207264
+        },
+        {
+          "task_id": "graphstate-n8-s0",
+          "baseline": 1.691100958007155,
+          "candidate": 0.0020868339925073087,
+          "baseline_over_candidate": 810.3667872379801
+        },
+        {
+          "task_id": "graphstate-n8-s1",
+          "baseline": 1.810577291995287,
+          "candidate": 0.0020621670118998736,
+          "baseline_over_candidate": 877.9974083317348
+        },
+        {
+          "task_id": "graphstate-n8-s2",
+          "baseline": 1.9244544999965,
+          "candidate": 0.002089082991005853,
+          "baseline_over_candidate": 921.1958109284652
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.1025090420152992,
+          "candidate": 0.0021169999963603914,
+          "baseline_over_candidate": 48.421843264778346
+        },
+        {
+          "task_id": "grover-n4-s1",
+          "baseline": 0.10108670900808647,
+          "candidate": 0.0021231249847915024,
+          "baseline_over_candidate": 47.612227133210204
+        },
+        {
+          "task_id": "grover-n4-s2",
+          "baseline": 0.10095629098941572,
+          "candidate": 0.002121540979715064,
+          "baseline_over_candidate": 47.58630257661804
+        },
+        {
+          "task_id": "grover-n6-s0",
+          "baseline": 0.22311287498450838,
+          "candidate": 0.0036576249985955656,
+          "baseline_over_candidate": 60.99938486591108
+        },
+        {
+          "task_id": "grover-n6-s1",
+          "baseline": 0.22040220798226073,
+          "candidate": 0.0036559169820975512,
+          "baseline_over_candidate": 60.2864367712767
+        },
+        {
+          "task_id": "grover-n6-s2",
+          "baseline": 0.22171366700786166,
+          "candidate": 0.0036570839874912053,
+          "baseline_over_candidate": 60.62580672640208
+        },
+        {
+          "task_id": "grover-n8-s0",
+          "baseline": 0.3487622080137953,
+          "candidate": 0.36114170801010914,
+          "baseline_over_candidate": 0.9657212121398969
+        },
+        {
+          "task_id": "grover-n8-s1",
+          "baseline": 0.34860674999072216,
+          "candidate": 0.349946624977747,
+          "baseline_over_candidate": 0.9961712018593978
+        },
+        {
+          "task_id": "grover-n8-s2",
+          "baseline": 0.3343944580119569,
+          "candidate": 0.3506761250027921,
+          "baseline_over_candidate": 0.9535706430236572
+        },
+        {
+          "task_id": "iqp-n10-s0",
+          "baseline": 0.12821950000943616,
+          "candidate": 0.002560499997343868,
+          "baseline_over_candidate": 50.075961781856876
+        },
+        {
+          "task_id": "iqp-n10-s1",
+          "baseline": 0.1249285840021912,
+          "candidate": 0.002671875001396984,
+          "baseline_over_candidate": 46.756896912045875
+        },
+        {
+          "task_id": "iqp-n10-s2",
+          "baseline": 0.1416957920009736,
+          "candidate": 0.002510291989892721,
+          "baseline_over_candidate": 56.44594038123392
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.04194329198799096,
+          "candidate": 0.0014252919936552644,
+          "baseline_over_candidate": 29.427859115678014
+        },
+        {
+          "task_id": "iqp-n4-s1",
+          "baseline": 0.038220791990170255,
+          "candidate": 0.0014042920083738863,
+          "baseline_over_candidate": 27.21712561365951
+        },
+        {
+          "task_id": "iqp-n4-s2",
+          "baseline": 0.038148082996485755,
+          "candidate": 0.0013922920043114573,
+          "baseline_over_candidate": 27.39948435985702
+        },
+        {
+          "task_id": "iqp-n6-s0",
+          "baseline": 0.05094191699754447,
+          "candidate": 0.0016636659856885672,
+          "baseline_over_candidate": 30.62027921215228
+        },
+        {
+          "task_id": "iqp-n6-s1",
+          "baseline": 0.11460608299239539,
+          "candidate": 0.0016727499896660447,
+          "baseline_over_candidate": 68.51357566905492
+        },
+        {
+          "task_id": "iqp-n6-s2",
+          "baseline": 0.06823204198735766,
+          "candidate": 0.0016479170008096844,
+          "baseline_over_candidate": 41.405023404596626
+        },
+        {
+          "task_id": "iqp-n8-s0",
+          "baseline": 0.14194029200007208,
+          "candidate": 0.0019616249774117023,
+          "baseline_over_candidate": 72.35852603557153
+        },
+        {
+          "task_id": "iqp-n8-s1",
+          "baseline": 0.13755495799705386,
+          "candidate": 0.0019537920015864074,
+          "baseline_over_candidate": 70.40409515719395
+        },
+        {
+          "task_id": "iqp-n8-s2",
+          "baseline": 0.05626091698650271,
+          "candidate": 0.002001374989049509,
+          "baseline_over_candidate": 28.111132243749125
+        }
+      ]
+    },
+    "effective": {
+      "matched_verified_tasks": 33,
+      "median_baseline_over_candidate": 29.42350651389033,
+      "faster_candidate_tasks": 27,
+      "slower_candidate_tasks": 6,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.05323016599868424,
+          "candidate": 0.23974470898974687,
+          "baseline_over_candidate": 0.2220285328630995
+        },
+        {
+          "task_id": "arithmetic-n4-s1",
+          "baseline": 0.05288162501528859,
+          "candidate": 0.2357875420129858,
+          "baseline_over_candidate": 0.22427658630232541
+        },
+        {
+          "task_id": "arithmetic-n4-s2",
+          "baseline": 0.0525312919926364,
+          "candidate": 0.23601170899928547,
+          "baseline_over_candidate": 0.22257917717461823
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.0013561250234488398,
+          "candidate": 0.001950541016412899,
+          "baseline_over_candidate": 0.6952558351953002
+        },
+        {
+          "task_id": "graphstate-n4-s1",
+          "baseline": 0.001437708007870242,
+          "candidate": 0.0018692919984459877,
+          "baseline_over_candidate": 0.7691190081942588
+        },
+        {
+          "task_id": "graphstate-n4-s2",
+          "baseline": 0.0013301660073921084,
+          "candidate": 0.0018969170050695539,
+          "baseline_over_candidate": 0.7012252005950759
+        },
+        {
+          "task_id": "graphstate-n6-s0",
+          "baseline": 0.002322415995877236,
+          "candidate": 0.0020930420141667128,
+          "baseline_over_candidate": 1.1095888090912702
+        },
+        {
+          "task_id": "graphstate-n6-s1",
+          "baseline": 0.0022509169939439744,
+          "candidate": 0.002078499994240701,
+          "baseline_over_candidate": 1.082952610142421
+        },
+        {
+          "task_id": "graphstate-n6-s2",
+          "baseline": 0.002148875006241724,
+          "candidate": 0.0020461250096559525,
+          "baseline_over_candidate": 1.050216871452565
+        },
+        {
+          "task_id": "graphstate-n8-s0",
+          "baseline": 1.691100958007155,
+          "candidate": 0.002302208013134077,
+          "baseline_over_candidate": 734.5561080316976
+        },
+        {
+          "task_id": "graphstate-n8-s1",
+          "baseline": 1.810577291995287,
+          "candidate": 0.0023086250002961606,
+          "baseline_over_candidate": 784.2665187126615
+        },
+        {
+          "task_id": "graphstate-n8-s2",
+          "baseline": 1.9244544999965,
+          "candidate": 0.0023013330064713955,
+          "baseline_over_candidate": 836.2346929300952
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.1025090420152992,
+          "candidate": 0.0025469170068390667,
+          "baseline_over_candidate": 40.24828517774176
+        },
+        {
+          "task_id": "grover-n4-s1",
+          "baseline": 0.10108670900808647,
+          "candidate": 0.0024455839884467423,
+          "baseline_over_candidate": 41.334384541947145
+        },
+        {
+          "task_id": "grover-n4-s2",
+          "baseline": 0.10095629098941572,
+          "candidate": 0.002526416996261105,
+          "baseline_over_candidate": 39.96026433436086
+        },
+        {
+          "task_id": "grover-n6-s0",
+          "baseline": 0.22311287498450838,
+          "candidate": 0.00466533299186267,
+          "baseline_over_candidate": 47.823569158656966
+        },
+        {
+          "task_id": "grover-n6-s1",
+          "baseline": 0.22040220798226073,
+          "candidate": 0.004529541009105742,
+          "baseline_over_candidate": 48.65883928176959
+        },
+        {
+          "task_id": "grover-n6-s2",
+          "baseline": 0.22171366700786166,
+          "candidate": 0.004535624990239739,
+          "baseline_over_candidate": 48.88271571943662
+        },
+        {
+          "task_id": "grover-n8-s0",
+          "baseline": 0.3487622080137953,
+          "candidate": 0.013843541004462168,
+          "baseline_over_candidate": 25.193135766447277
+        },
+        {
+          "task_id": "grover-n8-s1",
+          "baseline": 0.34860674999072216,
+          "candidate": 0.013767041004030034,
+          "baseline_over_candidate": 25.321835671781198
+        },
+        {
+          "task_id": "grover-n8-s2",
+          "baseline": 0.3343944580119569,
+          "candidate": 0.013615167001262307,
+          "baseline_over_candidate": 24.56043748717545
+        },
+        {
+          "task_id": "iqp-n10-s0",
+          "baseline": 0.12821950000943616,
+          "candidate": 0.0027883329894393682,
+          "baseline_over_candidate": 45.984285411770855
+        },
+        {
+          "task_id": "iqp-n10-s1",
+          "baseline": 0.1249285840021912,
+          "candidate": 0.002897333004511893,
+          "baseline_over_candidate": 43.11847613223791
+        },
+        {
+          "task_id": "iqp-n10-s2",
+          "baseline": 0.1416957920009736,
+          "candidate": 0.0026985419972334057,
+          "baseline_over_candidate": 52.50827748696989
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.04194329198799096,
+          "candidate": 0.001506542001152411,
+          "baseline_over_candidate": 27.840771751406166
+        },
+        {
+          "task_id": "iqp-n4-s1",
+          "baseline": 0.038220791990170255,
+          "candidate": 0.0015703749959357083,
+          "baseline_over_candidate": 24.338640190457433
+        },
+        {
+          "task_id": "iqp-n4-s2",
+          "baseline": 0.038148082996485755,
+          "candidate": 0.0015372080088127404,
+          "baseline_over_candidate": 24.81647426879421
+        },
+        {
+          "task_id": "iqp-n6-s0",
+          "baseline": 0.05094191699754447,
+          "candidate": 0.0017313339922111481,
+          "baseline_over_candidate": 29.42350651389033
+        },
+        {
+          "task_id": "iqp-n6-s1",
+          "baseline": 0.11460608299239539,
+          "candidate": 0.0018034999957308173,
+          "baseline_over_candidate": 63.54648365050565
+        },
+        {
+          "task_id": "iqp-n6-s2",
+          "baseline": 0.06823204198735766,
+          "candidate": 0.0018652080034371465,
+          "baseline_over_candidate": 36.581465370951555
+        },
+        {
+          "task_id": "iqp-n8-s0",
+          "baseline": 0.14194029200007208,
+          "candidate": 0.0021701669902540743,
+          "baseline_over_candidate": 65.40523961405121
+        },
+        {
+          "task_id": "iqp-n8-s1",
+          "baseline": 0.13755495799705386,
+          "candidate": 0.002167375001590699,
+          "baseline_over_candidate": 63.46615509364938
+        },
+        {
+          "task_id": "iqp-n8-s2",
+          "baseline": 0.05626091698650271,
+          "candidate": 0.002220499998657033,
+          "baseline_over_candidate": 25.337048872114178
+        }
+      ]
+    },
+    "effective_vs_raw": {
+      "matched_verified_tasks": 36,
+      "median_baseline_over_candidate": 0.9048164347194299,
+      "faster_candidate_tasks": 3,
+      "slower_candidate_tasks": 33,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.0021374579810071737,
+          "candidate": 0.23974470898974687,
+          "baseline_over_candidate": 0.0089155585122781
+        },
+        {
+          "task_id": "arithmetic-n4-s1",
+          "baseline": 0.002180125011363998,
+          "candidate": 0.2357875420129858,
+          "baseline_over_candidate": 0.009246141644090464
+        },
+        {
+          "task_id": "arithmetic-n4-s2",
+          "baseline": 0.0022010419925209135,
+          "candidate": 0.23601170899928547,
+          "baseline_over_candidate": 0.00932598641759582
+        },
+        {
+          "task_id": "graphstate-n10-s0",
+          "baseline": 0.0023561670095659792,
+          "candidate": 0.0027439999976195395,
+          "baseline_over_candidate": 0.8586614473797336
+        },
+        {
+          "task_id": "graphstate-n10-s1",
+          "baseline": 0.002190250001149252,
+          "candidate": 0.0026308330125175416,
+          "baseline_over_candidate": 0.8325309857098534
+        },
+        {
+          "task_id": "graphstate-n10-s2",
+          "baseline": 0.0022270409972406924,
+          "candidate": 0.002712792018428445,
+          "baseline_over_candidate": 0.8209405594354579
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.0019041670020669699,
+          "candidate": 0.001950541016412899,
+          "baseline_over_candidate": 0.9762250504061626
+        },
+        {
+          "task_id": "graphstate-n4-s1",
+          "baseline": 0.001864165998995304,
+          "candidate": 0.0018692919984459877,
+          "baseline_over_candidate": 0.9972577855921145
+        },
+        {
+          "task_id": "graphstate-n4-s2",
+          "baseline": 0.00182095798663795,
+          "candidate": 0.0018969170050695539,
+          "baseline_over_candidate": 0.9599565936577079
+        },
+        {
+          "task_id": "graphstate-n6-s0",
+          "baseline": 0.001990415999898687,
+          "candidate": 0.0020930420141667128,
+          "baseline_over_candidate": 0.950968010401414
+        },
+        {
+          "task_id": "graphstate-n6-s1",
+          "baseline": 0.0018898340058512986,
+          "candidate": 0.002078499994240701,
+          "baseline_over_candidate": 0.9092297383150466
+        },
+        {
+          "task_id": "graphstate-n6-s2",
+          "baseline": 0.0018685830000322312,
+          "candidate": 0.0020461250096559525,
+          "baseline_over_candidate": 0.9132301258301054
+        },
+        {
+          "task_id": "graphstate-n8-s0",
+          "baseline": 0.0020868339925073087,
+          "candidate": 0.002302208013134077,
+          "baseline_over_candidate": 0.9064489310270568
+        },
+        {
+          "task_id": "graphstate-n8-s1",
+          "baseline": 0.0020621670118998736,
+          "candidate": 0.0023086250002961606,
+          "baseline_over_candidate": 0.8932446853149948
+        },
+        {
+          "task_id": "graphstate-n8-s2",
+          "baseline": 0.002089082991005853,
+          "candidate": 0.0023013330064713955,
+          "baseline_over_candidate": 0.9077708376542242
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.0021169999963603914,
+          "candidate": 0.0025469170068390667,
+          "baseline_over_candidate": 0.831201013097699
+        },
+        {
+          "task_id": "grover-n4-s1",
+          "baseline": 0.0021231249847915024,
+          "candidate": 0.0024455839884467423,
+          "baseline_over_candidate": 0.8681464201685248
+        },
+        {
+          "task_id": "grover-n4-s2",
+          "baseline": 0.002121540979715064,
+          "candidate": 0.002526416996261105,
+          "baseline_over_candidate": 0.8397429968428708
+        },
+        {
+          "task_id": "grover-n6-s0",
+          "baseline": 0.0036576249985955656,
+          "candidate": 0.00466533299186267,
+          "baseline_over_candidate": 0.7840008430213319
+        },
+        {
+          "task_id": "grover-n6-s1",
+          "baseline": 0.0036559169820975512,
+          "candidate": 0.004529541009105742,
+          "baseline_over_candidate": 0.8071274715800247
+        },
+        {
+          "task_id": "grover-n6-s2",
+          "baseline": 0.0036570839874912053,
+          "candidate": 0.004535624990239739,
+          "baseline_over_candidate": 0.8063021072864102
+        },
+        {
+          "task_id": "grover-n8-s0",
+          "baseline": 0.36114170801010914,
+          "candidate": 0.013843541004462168,
+          "baseline_over_candidate": 26.087379514656178
+        },
+        {
+          "task_id": "grover-n8-s1",
+          "baseline": 0.349946624977747,
+          "candidate": 0.013767041004030034,
+          "baseline_over_candidate": 25.41916050626325
+        },
+        {
+          "task_id": "grover-n8-s2",
+          "baseline": 0.3506761250027921,
+          "candidate": 0.013615167001262307,
+          "baseline_over_candidate": 25.756285249404563
+        },
+        {
+          "task_id": "iqp-n10-s0",
+          "baseline": 0.002560499997343868,
+          "candidate": 0.0027883329894393682,
+          "baseline_over_candidate": 0.91829060841786
+        },
+        {
+          "task_id": "iqp-n10-s1",
+          "baseline": 0.002671875001396984,
+          "candidate": 0.002897333004511893,
+          "baseline_over_candidate": 0.9221842975026299
+        },
+        {
+          "task_id": "iqp-n10-s2",
+          "baseline": 0.002510291989892721,
+          "candidate": 0.0026985419972334057,
+          "baseline_over_candidate": 0.9302401046440331
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.0014252919936552644,
+          "candidate": 0.001506542001152411,
+          "baseline_over_candidate": 0.9460685414445826
+        },
+        {
+          "task_id": "iqp-n4-s1",
+          "baseline": 0.0014042920083738863,
+          "candidate": 0.0015703749959357083,
+          "baseline_over_candidate": 0.8942399184961161
+        },
+        {
+          "task_id": "iqp-n4-s2",
+          "baseline": 0.0013922920043114573,
+          "candidate": 0.0015372080088127404,
+          "baseline_over_candidate": 0.9057277846130865
+        },
+        {
+          "task_id": "iqp-n6-s0",
+          "baseline": 0.0016636659856885672,
+          "candidate": 0.0017313339922111481,
+          "baseline_over_candidate": 0.9609156830357384
+        },
+        {
+          "task_id": "iqp-n6-s1",
+          "baseline": 0.0016727499896660447,
+          "candidate": 0.0018034999957308173,
+          "baseline_over_candidate": 0.927502075755875
+        },
+        {
+          "task_id": "iqp-n6-s2",
+          "baseline": 0.0016479170008096844,
+          "candidate": 0.0018652080034371465,
+          "baseline_over_candidate": 0.8835030719217132
+        },
+        {
+          "task_id": "iqp-n8-s0",
+          "baseline": 0.0019616249774117023,
+          "candidate": 0.0021701669902540743,
+          "baseline_over_candidate": 0.9039050848257734
+        },
+        {
+          "task_id": "iqp-n8-s1",
+          "baseline": 0.0019537920015864074,
+          "candidate": 0.002167375001590699,
+          "baseline_over_candidate": 0.9014554473279719
+        },
+        {
+          "task_id": "iqp-n8-s2",
+          "baseline": 0.002001374989049509,
+          "candidate": 0.002220499998657033,
+          "baseline_over_candidate": 0.9013172664985133
+        }
+      ]
+    }
+  },
+  "selector_completion_and_par2": {
+    "per_policy": {
+      "effective": {
+        "recorded_replays": 144,
+        "unique_tasks": 48,
+        "successful_verified_replays": 108,
+        "completion_rate": 0.75,
+        "par2_penalty_s_per_failure": 120.0,
+        "total_par2_s_over_recorded_replays": 4322.477062583988,
+        "median_per_task_par2_s": 0.008227958474890329,
+        "scope": "Each timed-out, unsupported, failed, or unverified replay is assigned twice the configured timeout."
+      },
+      "fixed": {
+        "recorded_replays": 144,
+        "unique_tasks": 48,
+        "successful_verified_replays": 126,
+        "completion_rate": 0.875,
+        "par2_penalty_s_per_failure": 120.0,
+        "total_par2_s_over_recorded_replays": 2187.9961727861664,
+        "median_per_task_par2_s": 0.2797244170214981,
+        "scope": "Each timed-out, unsupported, failed, or unverified replay is assigned twice the configured timeout."
+      },
+      "raw": {
+        "recorded_replays": 144,
+        "unique_tasks": 48,
+        "successful_verified_replays": 135,
+        "completion_rate": 0.9375,
+        "par2_penalty_s_per_failure": 120.0,
+        "total_par2_s_over_recorded_replays": 1084.0091341269435,
+        "median_per_task_par2_s": 0.006566603507963009,
+        "scope": "Each timed-out, unsupported, failed, or unverified replay is assigned twice the configured timeout."
+      }
+    },
+    "complete_matched_task_repeats": 144,
+    "par2_totals_on_common_task_repeats": {
+      "fixed": 2187.9961727861664,
+      "raw": 1084.0091341269435,
+      "effective": 4322.477062583988
+    }
+  },
+  "paired_verified_batch": {
+    "graphstate:batch=1": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 1.0427338948788059,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.0022614589834120125,
+            "candidate": 0.0021324580011423677,
+            "baseline_over_candidate": 1.0604940318639515
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.0017994999943766743,
+            "candidate": 0.0017041249957401305,
+            "baseline_over_candidate": 1.0559671379006565
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.0018700829823501408,
+            "candidate": 0.0018187089881394058,
+            "baseline_over_candidate": 1.028247506635623
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.001958625012775883,
+            "candidate": 0.0019025000219698995,
+            "baseline_over_candidate": 1.0295006518569552
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 22.579452259862435,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.04911954200360924,
+            "candidate": 0.0021324580011423677,
+            "baseline_over_candidate": 23.03423653703645
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.03530437499284744,
+            "candidate": 0.0017041249957401305,
+            "baseline_over_candidate": 20.717010243438246
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.040659958991454914,
+            "candidate": 0.0018187089881394058,
+            "baseline_over_candidate": 22.35649532531935
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.04338158399332315,
+            "candidate": 0.0019025000219698995,
+            "baseline_over_candidate": 22.802409194405524
+          }
+        ]
+      }
+    },
+    "graphstate:batch=8": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 1.8441147625293837,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.006037167011527345,
+            "candidate": 0.002386000007390976,
+            "baseline_over_candidate": 2.5302460154343493
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.0024799999955575913,
+            "candidate": 0.0018983750196639448,
+            "baseline_over_candidate": 1.3063804410977802
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.0033103330060839653,
+            "candidate": 0.0020151250064373016,
+            "baseline_over_candidate": 1.6427432519119813
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.004438874981133267,
+            "candidate": 0.002170082996599376,
+            "baseline_over_candidate": 2.045486273146786
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 40.60975695700864,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.11747654099599458,
+            "candidate": 0.002386000007390976,
+            "baseline_over_candidate": 49.23576723893303
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.051379375014221296,
+            "candidate": 0.0018983750196639448,
+            "baseline_over_candidate": 27.064923675258118
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.0745511660061311,
+            "candidate": 0.0020151250064373016,
+            "baseline_over_candidate": 36.995802130377996
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.0959691249881871,
+            "candidate": 0.002170082996599376,
+            "baseline_over_candidate": 44.223711783639295
+          }
+        ]
+      }
+    },
+    "graphstate:batch=32": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 3.848533901862659,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.018662083020899445,
+            "candidate": 0.002894540986744687,
+            "baseline_over_candidate": 6.4473376284395085
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.00454850000096485,
+            "candidate": 0.0024739590007811785,
+            "baseline_over_candidate": 1.838551083315695
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.0078371659910772,
+            "candidate": 0.0025923750072252005,
+            "baseline_over_candidate": 3.023160603398142
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.012633959006052464,
+            "candidate": 0.0027030829805880785,
+            "baseline_over_candidate": 4.673907200327176
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 85.8207998790011,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.3594595000031404,
+            "candidate": 0.002894540986744687,
+            "baseline_over_candidate": 124.18532045296844
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.09830791698186658,
+            "candidate": 0.0024739590007811785,
+            "baseline_over_candidate": 39.73708414360336
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.18601224999292754,
+            "candidate": 0.0025923750072252005,
+            "baseline_over_candidate": 71.75360411765017
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.2700055409804918,
+            "candidate": 0.0027030829805880785,
+            "baseline_over_candidate": 99.88799564035205
+          }
+        ]
+      }
+    },
+    "graphstate:batch=128": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 7.653138434346279,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 0.06920087500475347,
+            "candidate": 0.005101707996800542,
+            "baseline_over_candidate": 13.564256333006856
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.012755458010360599,
+            "candidate": 0.004610707983374596,
+            "baseline_over_candidate": 2.7664857666880103
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.026577208016533405,
+            "candidate": 0.004609041003277525,
+            "baseline_over_candidate": 5.766320585482781
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.045289749978110194,
+            "candidate": 0.004747375001898035,
+            "baseline_over_candidate": 9.539956283209778
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 172.49485644907853,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n10-s0",
+            "baseline": 1.3305355409975164,
+            "candidate": 0.005101707996800542,
+            "baseline_over_candidate": 260.8019788337438
+          },
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.28195483298623003,
+            "candidate": 0.004610707983374596,
+            "baseline_over_candidate": 61.15217749701558
+          },
+          {
+            "task_id": "graphstate-n6-s0",
+            "baseline": 0.6250758750247769,
+            "candidate": 0.004609041003277525,
+            "baseline_over_candidate": 135.61950839237068
+          },
+          {
+            "task_id": "graphstate-n8-s0",
+            "baseline": 0.9939588750130497,
+            "candidate": 0.004747375001898035,
+            "baseline_over_candidate": 209.37020450578638
+          }
+        ]
+      }
+    },
+    "iqp:batch=1": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 1.0112941879171085,
+        "faster_candidate_tasks": 3,
+        "slower_candidate_tasks": 1,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.004930541996145621,
+            "candidate": 0.004962292005075142,
+            "baseline_over_candidate": 0.9936017451417513
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.0016914169827941805,
+            "candidate": 0.0016631250036880374,
+            "baseline_over_candidate": 1.0170113365161395
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.0018840410048142076,
+            "candidate": 0.0017760840128175914,
+            "baseline_over_candidate": 1.0607837192483662
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.002253834012662992,
+            "candidate": 0.002241334004793316,
+            "baseline_over_candidate": 1.0055770393180772
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 27.32620410039511,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.12846999999601394,
+            "candidate": 0.004962292005075142,
+            "baseline_over_candidate": 25.889246312917972
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.0421665410103742,
+            "candidate": 0.0016631250036880374,
+            "baseline_over_candidate": 25.353801378049415
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.051085791987134144,
+            "candidate": 0.0017760840128175914,
+            "baseline_over_candidate": 28.763161887872243
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.1365541669947561,
+            "candidate": 0.002241334004793316,
+            "baseline_over_candidate": 60.92539831311237
+          }
+        ]
+      }
+    },
+    "iqp:batch=8": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 1.315951632166902,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.025782042008358985,
+            "candidate": 0.02396879199659452,
+            "baseline_over_candidate": 1.0756504546421068
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.002705624996451661,
+            "candidate": 0.0020129999902565032,
+            "baseline_over_candidate": 1.344076010704253
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.0035982919798698276,
+            "candidate": 0.002557958010584116,
+            "baseline_over_candidate": 1.4067048657488121
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.00624725001398474,
+            "candidate": 0.0048510000051464885,
+            "baseline_over_candidate": 1.287827253629551
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 37.44035966288918,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.22007491698605008,
+            "candidate": 0.02396879199659452,
+            "baseline_over_candidate": 9.181727515400787
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.06958154201856814,
+            "candidate": 0.0020129999902565032,
+            "baseline_over_candidate": 34.5660915823958
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.10312312497990206,
+            "candidate": 0.002557958010584116,
+            "baseline_over_candidate": 40.31462774338256
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.21234466598252766,
+            "candidate": 0.0048510000051464885,
+            "baseline_over_candidate": 43.77337987162409
+          }
+        ]
+      }
+    },
+    "iqp:batch=32": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 1.5943498866770878,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.09783541699289344,
+            "candidate": 0.08914808300323784,
+            "baseline_over_candidate": 1.0974483544344984
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.005626332975225523,
+            "candidate": 0.0031455830030608922,
+            "baseline_over_candidate": 1.7886455292232544
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.009402750001754612,
+            "candidate": 0.004990082990843803,
+            "baseline_over_candidate": 1.884287299230798
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.01960466700256802,
+            "candidate": 0.014002791023813188,
+            "baseline_over_candidate": 1.4000542441309212
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 41.812311935049806,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.5349050000077114,
+            "candidate": 0.08914808300323784,
+            "baseline_over_candidate": 6.000185107606674
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.1617542910098564,
+            "candidate": 0.0031455830030608922,
+            "baseline_over_candidate": 51.42267454155784
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.2799736250017304,
+            "candidate": 0.004990082990843803,
+            "baseline_over_candidate": 56.10600575490389
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.4509171670069918,
+            "candidate": 0.014002791023813188,
+            "baseline_over_candidate": 32.20194932854177
+          }
+        ]
+      }
+    },
+    "iqp:batch=128": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 1.7846209012729228,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 0.382790458999807,
+            "candidate": 0.34784649999346584,
+            "baseline_over_candidate": 1.1004579865170343
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.017752042011125013,
+            "candidate": 0.007490083982702345,
+            "baseline_over_candidate": 2.3700724921271523
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.032695625006454065,
+            "candidate": 0.01545004200306721,
+            "baseline_over_candidate": 2.11621593002551
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 0.0741355000063777,
+            "candidate": 0.05102145901764743,
+            "baseline_over_candidate": 1.4530258725203355
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 4,
+        "median_baseline_over_candidate": 46.02515253170332,
+        "faster_candidate_tasks": 4,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n10-s0",
+            "baseline": 1.8382825000153389,
+            "candidate": 0.34784649999346584,
+            "baseline_over_candidate": 5.284752038758103
+          },
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.536331874987809,
+            "candidate": 0.007490083982702345,
+            "baseline_over_candidate": 71.60558896621424
+          },
+          {
+            "task_id": "iqp-n6-s0",
+            "baseline": 0.9812202079920098,
+            "candidate": 0.01545004200306721,
+            "baseline_over_candidate": 63.50922591648707
+          },
+          {
+            "task_id": "iqp-n8-s0",
+            "baseline": 1.4562075000139885,
+            "candidate": 0.05102145901764743,
+            "baseline_over_candidate": 28.541079146919568
+          }
+        ]
+      }
+    }
+  },
+  "batch_by_task": [
+    {
+      "task_id": "graphstate-n10-s0",
+      "family": "graphstate",
+      "physical_qubits": 28,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 7,
+        "32": 12,
+        "128": 16
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "graphstate-n4-s0",
+      "family": "graphstate",
+      "physical_qubits": 4,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 7,
+        "32": 12,
+        "128": 16
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "graphstate-n6-s0",
+      "family": "graphstate",
+      "physical_qubits": 12,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 7,
+        "32": 12,
+        "128": 16
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "graphstate-n8-s0",
+      "family": "graphstate",
+      "physical_qubits": 20,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 7,
+        "32": 12,
+        "128": 16
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "iqp-n10-s0",
+      "family": "iqp",
+      "physical_qubits": 10,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 8,
+        "32": 32,
+        "128": 128
+      },
+      "first_tested_shared_beats_independent_at_k": 8,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "iqp-n4-s0",
+      "family": "iqp",
+      "physical_qubits": 4,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 8,
+        "32": 31,
+        "128": 121
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "iqp-n6-s0",
+      "family": "iqp",
+      "physical_qubits": 6,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 8,
+        "32": 32,
+        "128": 128
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    },
+    {
+      "task_id": "iqp-n8-s0",
+      "family": "iqp",
+      "physical_qubits": 8,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "8": 8,
+        "32": 32,
+        "128": 128
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        8,
+        32,
+        128
+      ]
+    }
+  ],
+  "preprocess_stage_breakdown": [
+    {
+      "family": "arithmetic",
+      "strategy": "adaptive",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.018998020997969434,
+      "median_plan_s": 0.06322410295251757,
+      "median_evaluate_s": 1.391599653288722e-05,
+      "median_other_s": 0.0005837499775225297,
+      "sum_of_stage_medians_s": 0.08281978992454242,
+      "median_end_to_end_total_s": 0.0827387085009832,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "arithmetic",
+      "strategy": "fixed",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.0012765420106006786,
+      "median_plan_s": 0.005283333011902869,
+      "median_evaluate_s": 1.0249990737065673e-05,
+      "median_other_s": 0.00048170899390242994,
+      "sum_of_stage_medians_s": 0.007051834007143043,
+      "median_end_to_end_total_s": 0.007143625014577992,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "arithmetic",
+      "strategy": "native",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.017027812500600703,
+      "median_plan_s": 0.053664666003896855,
+      "median_evaluate_s": 1.2728996807709336e-05,
+      "median_other_s": 0.00032700000156182796,
+      "sum_of_stage_medians_s": 0.0710322075028671,
+      "median_end_to_end_total_s": 0.07216497900662944,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "graphstate",
+      "strategy": "adaptive",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.009601104000466876,
+      "median_plan_s": 0.03576608299044892,
+      "median_evaluate_s": 1.087499549612403e-05,
+      "median_other_s": 0.0003147904935758561,
+      "sum_of_stage_medians_s": 0.04569285247998778,
+      "median_end_to_end_total_s": 0.04618906250107102,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "graphstate",
+      "strategy": "fixed",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.0009155415027635172,
+      "median_plan_s": 0.01178837550105527,
+      "median_evaluate_s": 1.0291507351212204e-05,
+      "median_other_s": 0.0002876874932553619,
+      "sum_of_stage_medians_s": 0.013001896004425362,
+      "median_end_to_end_total_s": 0.013017833509366028,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "graphstate",
+      "strategy": "native",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.008810749975964427,
+      "median_plan_s": 0.03391358349472284,
+      "median_evaluate_s": 1.208350295200944e-05,
+      "median_other_s": 0.00010002098861150444,
+      "sum_of_stage_medians_s": 0.042836437962250784,
+      "median_end_to_end_total_s": 0.042994146002456546,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "grover",
+      "strategy": "adaptive",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 27,
+      "median_prepare_s": 0.031379374995594844,
+      "median_plan_s": 3.5566929999913555,
+      "median_evaluate_s": 0.0004800624883500859,
+      "median_other_s": 0.001120354572776705,
+      "sum_of_stage_medians_s": 3.589672792048077,
+      "median_end_to_end_total_s": 3.5892293754877755,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "grover",
+      "strategy": "fixed",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 27,
+      "median_prepare_s": 0.004139062511967495,
+      "median_plan_s": 0.15588668698910624,
+      "median_evaluate_s": 0.00044485450780484825,
+      "median_other_s": 0.0005953545187367126,
+      "sum_of_stage_medians_s": 0.1610659585276153,
+      "median_end_to_end_total_s": 0.1610710835084319,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "grover",
+      "strategy": "native",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 27,
+      "median_prepare_s": 0.021204437492997386,
+      "median_plan_s": 0.27030864550033584,
+      "median_evaluate_s": 0.0006209165148902684,
+      "median_other_s": 0.0005077084933873266,
+      "sum_of_stage_medians_s": 0.2926417080016108,
+      "median_end_to_end_total_s": 0.2924686665064655,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "iqp",
+      "strategy": "adaptive",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.011448832985479385,
+      "median_plan_s": 0.3953374369884841,
+      "median_evaluate_s": 0.00018729150178842247,
+      "median_other_s": 0.0004057489859405905,
+      "sum_of_stage_medians_s": 0.4073793104616925,
+      "median_end_to_end_total_s": 0.4068366249994142,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "iqp",
+      "strategy": "fixed",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.0009199374908348545,
+      "median_plan_s": 0.1037616249959683,
+      "median_evaluate_s": 0.00022656249348074198,
+      "median_other_s": 0.00032189548073802143,
+      "sum_of_stage_medians_s": 0.10523002046102192,
+      "median_end_to_end_total_s": 0.10513727100624237,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "iqp",
+      "strategy": "native",
+      "records": 36,
+      "successful_records": 36,
+      "verified_records": 36,
+      "median_prepare_s": 0.010125354005140252,
+      "median_plan_s": 0.10395066649653018,
+      "median_evaluate_s": 0.00017916598881129175,
+      "median_other_s": 0.00011810599244199693,
+      "sum_of_stage_medians_s": 0.11437329248292372,
+      "median_end_to_end_total_s": 0.11399620801967103,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    }
+  ],
+  "structure_performance_tradeoffs": {
+    "comparison": "structure reduced -> rank candidate; timings compare full adaptive and native workflows",
+    "counts": {
+      "tasks_with_rank_step_metrics": 48,
+      "rank_decrease_tasks": 0,
+      "L_increase_at_rank_step_tasks": 0,
+      "estimated_combo_comparable_at_rank_step_tasks": 0,
+      "estimated_combo_increase_at_rank_step_tasks": 0,
+      "estimated_combo_comparable_all_tasks": 48,
+      "estimated_combo_increase_all_tasks": 0
+    },
+    "verified_slowdown_examples": [],
+    "example_selection": "Top three adaptive/native median-time ratios among rank-decrease tasks with all matched repeats verified.",
+    "interpretation": "A smaller rank or L does not establish a runtime cause; adaptive total includes candidate generation, planning, evaluation, and task overhead."
+  },
+  "selection_fold_count": 4,
+  "selection_oof_summary": {
+    "fixed": {
+      "tasks": 48,
+      "completed": 45,
+      "median_estimated_total_s": 0.09262960450723767,
+      "median_oracle_regret": 30.72712211529877
+    },
+    "raw": {
+      "tasks": 48,
+      "completed": 48,
+      "median_estimated_total_s": 0.0021635419980157167,
+      "median_oracle_regret": 1.0
+    },
+    "effective": {
+      "tasks": 48,
+      "completed": 39,
+      "median_estimated_total_s": 0.0027111459930893034,
+      "median_oracle_regret": 1.0
+    }
+  },
+  "scope_note": "Run-local measurements on the recorded CPU and workload only; no general speedup claim is inferred from structure metrics."
+}

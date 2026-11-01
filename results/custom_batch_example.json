@@ -1,0 +1,102 @@
+{
+  "method": "shared_graph",
+  "amplitudes": [
+    [
+      0.15782083739333347,
+      -0.2198087532102171
+    ],
+    [
+      0.04383207562573926,
+      0.26702444429247035
+    ],
+    [
+      0.15782083739333347,
+      -0.2198087532102171
+    ],
+    [
+      0.04383207562573926,
+      0.26702444429247035
+    ]
+  ],
+  "timings_s": {
+    "prepare": 0.00015420798445120454,
+    "plan": 0.0,
+    "evaluate": 0.0021940000005997717
+  },
+  "per_query_s": [
+    0.0021640519989887252,
+    7.330199878197163e-05,
+    5.7384997489862144e-05,
+    5.3468989790417254e-05
+  ],
+  "total_s": 0.0023773330030962825,
+  "metadata": {
+    "query_count": 4,
+    "unique_query_count": 4,
+    "slot_count": 2,
+    "graph_vertices": 2,
+    "path_cache": null
+  },
+  "status": "ok",
+  "peak_rss_bytes": 33325056,
+  "startup_s": 0.4387900829897262,
+  "process_wall_s": 0.4426852499891538,
+  "timeout_s": 60,
+  "memory_budget_bytes": 2147483648,
+  "task_id": "custom-two-qubit-batch",
+  "task_hash": "53be92eeab81aa382328aebc136a9d2a1765122ecdb8e2f3403ef355ba5e1cdb",
+  "sign_vectors": [
+    [
+      1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "verification": "passed",
+  "verification_scope": "Separate exact references computed after the timed example run",
+  "reference_checks": [
+    {
+      "reference_kind": "exact_reduced_pathsum",
+      "reference_amplitude": [
+        0.15782083739333344,
+        -0.2198087532102171
+      ],
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "reference_kind": "exact_reduced_pathsum",
+      "reference_amplitude": [
+        0.04383207562573928,
+        0.2670244442924703
+      ],
+      "absolute_error": 5.928593550334434e-17
+    },
+    {
+      "reference_kind": "exact_reduced_pathsum",
+      "reference_amplitude": [
+        0.15782083739333344,
+        -0.2198087532102171
+      ],
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "reference_kind": "exact_reduced_pathsum",
+      "reference_amplitude": [
+        0.04383207562573928,
+        0.2670244442924703
+      ],
+      "absolute_error": 5.928593550334434e-17
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+all_successful,all_verified,family,median_peak_rss_bytes,median_total_s,records,status_counts,strategy,success_rate,successful_records,verified_rate,verified_records
+True,True,arithmetic,67026944.0,0.0827387085009832,36,"{""ok"": 36}",adaptive,1.0,36,1.0,36
+True,True,arithmetic,46120960.0,0.007143625014577992,36,"{""ok"": 36}",fixed,1.0,36,1.0,36
+True,True,arithmetic,65691648.0,0.07216497900662944,36,"{""ok"": 36}",native,1.0,36,1.0,36
+True,True,graphstate,65110016.0,0.04618906250107102,36,"{""ok"": 36}",adaptive,1.0,36,1.0,36
+True,True,graphstate,49430528.0,0.013017833509366028,36,"{""ok"": 36}",fixed,1.0,36,1.0,36
+True,True,graphstate,64290816.0,0.042994146002456546,36,"{""ok"": 36}",native,1.0,36,1.0,36
+True,False,grover,163692544.0,3.5892293754877755,36,"{""ok"": 36}",adaptive,1.0,36,0.75,27
+True,False,grover,59129856.0,0.1610710835084319,36,"{""ok"": 36}",fixed,1.0,36,0.75,27
+True,False,grover,69705728.0,0.2924686665064655,36,"{""ok"": 36}",native,1.0,36,0.75,27
+True,True,iqp,68919296.0,0.4068366249994142,36,"{""ok"": 36}",adaptive,1.0,36,1.0,36
+True,True,iqp,57688064.0,0.10513727100624237,36,"{""ok"": 36}",fixed,1.0,36,1.0,36
+True,True,iqp,68255744.0,0.11399620801967103,36,"{""ok"": 36}",native,1.0,36,1.0,36

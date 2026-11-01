@@ -1,0 +1,33 @@
+{
+  "task": {
+    "id": "custom-two-qubit-batch",
+    "family": "iqp",
+    "n": 2,
+    "circuit": [
+      ["H", [0]],
+      ["T", [0]],
+      ["H", [0]],
+      ["CNOT", [0, 1]],
+      ["TDG", [1]],
+      ["H", [1]]
+    ],
+    "x": 1,
+    "y": 2,
+    "global_phase": 0.23,
+    "seed": 0,
+    "metadata": {"description": "Two-qubit H/T/H amplitude with configurable T/T-dagger slots."}
+  },
+  "method": "shared_graph",
+  "sign_vectors": [
+    [1, -1],
+    [-1, 1],
+    [1, 1],
+    [-1, -1]
+  ],
+  "timeout_s": 60,
+  "memory_bytes": 2147483648,
+  "options": {
+    "max_half": 22,
+    "seed": 0
+  }
+}

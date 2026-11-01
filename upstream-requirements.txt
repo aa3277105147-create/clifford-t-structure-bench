@@ -1,0 +1,8 @@
+# Pinned package versions.
+# Experiment snapshot: Python 3.12.14 with these pins (results/environment.json).
+# Report, figure and PDF rebuild for release 2026-10-29-submission-r2:
+# Python 3.12.3 with these pins (results/report_build_environment.json).
+numpy==2.3.5
+networkx==3.7
+pytest==9.2.0
+matplotlib==3.10.8

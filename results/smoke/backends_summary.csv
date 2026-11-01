@@ -1,0 +1,13 @@
+all_successful,all_verified,backend,family,median_peak_rss_bytes,median_total_s,records,status_counts,success_rate,successful_records,verified_rate,verified_records
+True,True,mitm,arithmetic,247447552.0,0.2346807499998249,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,quimb,arithmetic,64421888.0,0.0505300420045387,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,statevector,arithmetic,23953408.0,0.0019417080038692802,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,mitm,graphstate,21708800.0,0.001649167010327801,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,quimb,graphstate,62210048.0,0.03358583300723694,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,statevector,graphstate,22609920.0,0.0010833330161403865,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,mitm,grover,247513088.0,0.34547733401996084,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,quimb,grover,67436544.0,0.06769733299734071,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,statevector,grover,23904256.0,0.002047083980869502,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,mitm,iqp,21790720.0,0.0017335829907096922,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,quimb,iqp,63979520.0,0.040428875014185905,1,"{""ok"": 1}",1.0,1,1.0,1
+True,True,statevector,iqp,23592960.0,0.0013069169945083559,1,"{""ok"": 1}",1.0,1,1.0,1

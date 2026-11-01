@@ -1,0 +1,21 @@
+{
+  "task_id": "graphstate-n4-s0",
+  "sign_vectors": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1
+    ]
+  ],
+  "batch_sizes": [
+    1,
+    2
+  ]
+}

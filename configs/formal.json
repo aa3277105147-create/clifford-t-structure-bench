@@ -1,0 +1,17 @@
+{
+  "name": "formal",
+  "families": ["grover", "arithmetic", "iqp", "graphstate", "brickwork1d", "brickwork2d"],
+  "scales": [4, 6, 8, 10],
+  "seeds": [100, 101, 102, 103, 104, 105, 106, 107, 108, 109],
+  "repeats": 3,
+  "timeout_s": 60,
+  "memory_bytes": 2147483648,
+  "backend_options": {
+    "planning_repeats": 8,
+    "local_rounds": 3,
+    "local_samples": 100,
+    "seed": 0
+  },
+  "batch_sizes": [1, 8, 32, 128],
+  "batch_tasks_per_family": 1
+}

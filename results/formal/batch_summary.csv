@@ -1,0 +1,25 @@
+all_successful,all_verified,batch_size,family,median_peak_rss_bytes,median_total_s,median_unique_query_count,method,records,status_counts,success_rate,successful_records,verified_rate,verified_records
+True,True,1,graphstate,21749760.0,0.002118270509527065,1.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,128,graphstate,21848064.0,0.04013391699118074,16.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,32,graphstate,21782528.0,0.012803687495761551,16.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,8,graphstate,21733376.0,0.004628833514288999,7.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,1,graphstate,63946752.0,0.047573125004419126,1.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,128,graphstate,99352576.0,0.9190347499970812,16.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,32,graphstate,65216512.0,0.2924464370153146,16.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,8,graphstate,65093632.0,0.10356893800781108,7.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,1,graphstate,21757952.0,0.002093667004373856,1.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,128,graphstate,21831680.0,0.005536583485081792,16.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,32,graphstate,21782528.0,0.0030767914868192747,16.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,8,graphstate,21774336.0,0.002364708503591828,7.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,1,iqp,22175744.0,0.002465188008500263,1.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,128,iqp,22331392.0,0.058012645997223444,128.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,32,iqp,22224896.0,0.016190895519685,32.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,8,iqp,22167552.0,0.0062541255028918386,8.0,independent,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,1,iqp,67452928.0,0.08733220849535428,1.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,128,iqp,102064128.0,1.499003853998147,128.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,32,iqp,68403200.0,0.4269800835172646,32.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,8,iqp,68141056.0,0.1545534589968156,8.0,quimb_cached,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,1,iqp,22159360.0,0.0024433540093014017,1.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,128,iqp,22306816.0,0.03587987499486189,128.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,32,iqp,22216704.0,0.010188792017288506,32.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12
+True,True,8,iqp,22216704.0,0.004982957980246283,8.0,shared_graph,12,"{""ok"": 12}",1.0,12,1.0,12

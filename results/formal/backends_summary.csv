@@ -1,0 +1,19 @@
+all_successful,all_verified,backend,family,median_peak_rss_bytes,median_total_s,records,status_counts,success_rate,successful_records,verified_rate,verified_records
+False,False,mitm,arithmetic,247504896.0,0.23535777049255557,120,"{""ok"": 30, ""unsupported"": 90}",0.25,30,0.25,30
+True,True,quimb,arithmetic,66207744.0,0.069740875493153,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,statevector,arithmetic,25051136.0,0.007534041476901621,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,mitm,brickwork1d,21856256.0,0.001898041504318826,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,quimb,brickwork1d,64724992.0,0.04631520849943627,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,statevector,brickwork1d,24002560.0,0.0016040415066527203,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,mitm,brickwork2d,21807104.0,0.0021630210103467107,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,quimb,brickwork2d,64446464.0,0.042553188002784736,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,statevector,brickwork2d,23896064.0,0.0017420834919903427,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,mitm,graphstate,21848064.0,0.0018764584965538234,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,quimb,graphstate,64569344.0,0.04362095848773606,120,"{""ok"": 120}",1.0,120,1.0,120
+False,False,statevector,graphstate,24231936.0,0.0021487084886757657,120,"{""ok"": 90, ""memory_limit"": 30}",0.75,90,0.75,90
+False,False,mitm,grover,247611392.0,0.35116762451070827,120,"{""ok"": 30, ""unsupported"": 90}",0.25,30,0.25,30
+True,False,quimb,grover,69763072.0,0.28680172900203615,120,"{""ok"": 120}",1.0,120,0.75,90
+True,False,statevector,grover,24723456.0,0.0074791249935515225,120,"{""ok"": 120}",1.0,120,0.75,90
+True,True,mitm,iqp,22249472.0,0.0020319375034887344,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,quimb,iqp,68083712.0,0.058680853981059045,120,"{""ok"": 120}",1.0,120,1.0,120
+True,True,statevector,iqp,23904256.0,0.0016558955103391781,120,"{""ok"": 120}",1.0,120,1.0,120

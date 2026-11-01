@@ -1,0 +1,29 @@
+{
+  "name": "smoke",
+  "families": [
+    "grover",
+    "arithmetic",
+    "iqp",
+    "graphstate"
+  ],
+  "scales": [
+    4
+  ],
+  "seeds": [
+    0
+  ],
+  "repeats": 1,
+  "timeout_s": 60,
+  "memory_bytes": 2147483648,
+  "backend_options": {
+    "planning_repeats": 2,
+    "local_rounds": 1,
+    "local_samples": 20,
+    "seed": 0
+  },
+  "batch_sizes": [
+    1,
+    2
+  ],
+  "batch_tasks_per_family": 1
+}

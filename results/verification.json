@@ -1,0 +1,233 @@
+{
+  "checked_at_utc": "2026-11-01T00:20:57.064532+00:00",
+  "measurement_source_commit": "7ac1f89ab6575feb9dec6c0574a07c41e2127dce",
+  "upstream_r2_files_unchanged": 35,
+  "locked_dependency_count": 36,
+  "test_suite": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "phases": {
+    "smoke": {
+      "tasks": 4,
+      "family_counts": {
+        "grover": 1,
+        "arithmetic": 1,
+        "iqp": 1,
+        "graphstate": 1
+      },
+      "measurement_source_hashes_matched": 30,
+      "references": {
+        "exact_reduced_pathsum": 4
+      },
+      "reference_unavailable_tasks": [],
+      "results": {
+        "preprocess": {
+          "records": 12,
+          "status_counts": {
+            "ok": 12
+          },
+          "verification_counts": {
+            "passed": 12
+          }
+        },
+        "backends": {
+          "records": 12,
+          "status_counts": {
+            "ok": 12
+          },
+          "verification_counts": {
+            "passed": 12
+          }
+        },
+        "selection_replay": {
+          "records": 12,
+          "status_counts": {
+            "ok": 12
+          },
+          "verification_counts": {
+            "passed": 12
+          }
+        },
+        "batch": {
+          "records": 12,
+          "verified_records": 12,
+          "skeletons": 2,
+          "batch_sizes": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "pilot": {
+      "tasks": 48,
+      "family_counts": {
+        "grover": 12,
+        "arithmetic": 12,
+        "iqp": 12,
+        "graphstate": 12
+      },
+      "measurement_source_hashes_matched": 30,
+      "references": {
+        "exact_reduced_pathsum": 39,
+        "independent_numpy_statevector": 6,
+        "unavailable": 3
+      },
+      "reference_unavailable_tasks": [
+        "grover-n10-s0",
+        "grover-n10-s1",
+        "grover-n10-s2"
+      ],
+      "results": {
+        "preprocess": {
+          "records": 432,
+          "status_counts": {
+            "ok": 432
+          },
+          "verification_counts": {
+            "passed": 405,
+            "reference_unavailable": 27
+          }
+        },
+        "backends": {
+          "records": 432,
+          "status_counts": {
+            "ok": 369,
+            "unsupported": 54,
+            "memory_limit": 9
+          },
+          "verification_counts": {
+            "passed": 351,
+            "not_completed": 63,
+            "reference_unavailable": 18
+          }
+        },
+        "selection_replay": {
+          "records": 432,
+          "status_counts": {
+            "ok": 396,
+            "unsupported": 27,
+            "memory_limit": 9
+          },
+          "verification_counts": {
+            "passed": 369,
+            "reference_unavailable": 27,
+            "not_completed": 36
+          }
+        },
+        "batch": {
+          "records": 288,
+          "verified_records": 288,
+          "skeletons": 8,
+          "batch_sizes": [
+            1,
+            8,
+            32,
+            128
+          ]
+        }
+      }
+    },
+    "formal": {
+      "tasks": 240,
+      "family_counts": {
+        "grover": 40,
+        "arithmetic": 40,
+        "iqp": 40,
+        "graphstate": 40,
+        "brickwork1d": 40,
+        "brickwork2d": 40
+      },
+      "measurement_source_hashes_matched": 30,
+      "references": {
+        "exact_reduced_pathsum": 210,
+        "independent_numpy_statevector": 20,
+        "unavailable": 10
+      },
+      "reference_unavailable_tasks": [
+        "grover-n10-s100",
+        "grover-n10-s101",
+        "grover-n10-s102",
+        "grover-n10-s103",
+        "grover-n10-s104",
+        "grover-n10-s105",
+        "grover-n10-s106",
+        "grover-n10-s107",
+        "grover-n10-s108",
+        "grover-n10-s109"
+      ],
+      "results": {
+        "preprocess": {
+          "records": 2160,
+          "status_counts": {
+            "ok": 2160
+          },
+          "verification_counts": {
+            "passed": 2070,
+            "reference_unavailable": 90
+          }
+        },
+        "backends": {
+          "records": 2160,
+          "status_counts": {
+            "ok": 1950,
+            "unsupported": 180,
+            "memory_limit": 30
+          },
+          "verification_counts": {
+            "passed": 1890,
+            "not_completed": 210,
+            "reference_unavailable": 60
+          }
+        },
+        "selection_replay": {
+          "records": 2160,
+          "status_counts": {
+            "ok": 2100,
+            "unsupported": 30,
+            "memory_limit": 30
+          },
+          "verification_counts": {
+            "passed": 2010,
+            "reference_unavailable": 90,
+            "not_completed": 60
+          }
+        },
+        "batch": {
+          "records": 288,
+          "verified_records": 288,
+          "skeletons": 8,
+          "batch_sizes": [
+            1,
+            8,
+            32,
+            128
+          ]
+        }
+      }
+    }
+  },
+  "pilot_formal_semantic_hash_overlap": 0,
+  "checks_passed": [
+    "exact configured task grid and unique semantic hashes",
+    "unaltered upstream r2 files",
+    "measurement source SHA-256 manifests match current files",
+    "all task-method-repeat and batch-method-size-repeat combinations present exactly once",
+    "passing numerical amplitudes independently rechecked against saved references",
+    "batch sign vector counts and unique-query metadata match saved inputs",
+    "per-record top-level stage sums do not exceed total_s",
+    "all lock entries pin package versions without local paths",
+    "87-test JUnit record contains no failures, errors, or skips"
+  ],
+  "custom_batch_example": {
+    "status": "passed",
+    "query_count": 4,
+    "max_absolute_error": 5.928593550334434e-17,
+    "input": "examples/custom_batch.json",
+    "record": "results/custom_batch_example.json",
+    "core_measurement_files_changed": false
+  }
+}

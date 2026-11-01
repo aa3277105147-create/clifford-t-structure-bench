@@ -1,0 +1,676 @@
+{
+  "experiment": "smoke",
+  "task_count": 4,
+  "family_counts": {
+    "grover": 1,
+    "arithmetic": 1,
+    "iqp": 1,
+    "graphstate": 1
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "logical_cpus": 10,
+    "physical_memory_bytes": 17179869184,
+    "versions": {
+      "numpy": "2.5.4",
+      "quimb": "1.15.0",
+      "cotengra": "0.8.3",
+      "qiskit": "2.6.1",
+      "networkx": "3.7",
+      "psutil": "7.2.2",
+      "matplotlib": "3.11.2"
+    },
+    "threads": 1,
+    "process_start_method": "forkserver",
+    "timing_scope": "JSON task parsing through route/preprocess/plan/evaluate; common dependency import/startup separately recorded",
+    "memory_scope": "individual job process peak RSS, including shared imported libraries; parent/forkserver excluded",
+    "memory_enforcement": "RSS sampled every 5 ms plus final OS high-water mark; polling can overshoot the threshold",
+    "created_at_utc": "2026-10-31T16:51:01Z"
+  },
+  "records": {
+    "preprocess": {
+      "records": 12,
+      "status_counts": {
+        "ok": 12
+      },
+      "verified_records": 12
+    },
+    "backends": {
+      "records": 12,
+      "status_counts": {
+        "ok": 12
+      },
+      "verified_records": 12
+    },
+    "selector_replay": {
+      "records": 12,
+      "status_counts": {
+        "ok": 12
+      },
+      "verified_records": 12
+    },
+    "batch": {
+      "records": 12,
+      "status_counts": {
+        "ok": 12
+      },
+      "verified_records": 12
+    },
+    "references": {
+      "records": 4,
+      "reference_kinds": {
+        "exact_reduced_pathsum": 4
+      },
+      "crosscheck_failures": 0
+    }
+  },
+  "timing_accounting": {
+    "preprocess": {
+      "records_with_total_s": 12,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 7.90000194683671e-05,
+      "max_other_s": 0.0005719150940421969,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "backends": {
+      "records_with_total_s": 12,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 3.7165998946875334e-05,
+      "max_other_s": 0.0002639580052345991,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "selection_replay": {
+      "records_with_total_s": 12,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 6.416699034161866e-05,
+      "max_other_s": 0.00079887401079759,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "batch": {
+      "records_with_total_s": 12,
+      "residual_definition": "total_s minus sum of top-level timings_s fields",
+      "min_other_s": 3.0458992114290595e-05,
+      "max_other_s": 8.295904262922704e-05,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09
+    },
+    "all_experiments": {
+      "records_with_total_s": 48,
+      "min_other_s": 3.0458992114290595e-05,
+      "max_other_s": 0.00079887401079759,
+      "negative_below_tolerance_count": 0,
+      "negative_tolerance_s": 1e-09,
+      "residual_definition": "total_s minus sum of top-level timings_s fields; nested selector routing timers are included in other_s"
+    }
+  },
+  "paired_verified_preprocess": {
+    "fixed": {
+      "matched_verified_tasks": 4,
+      "median_baseline_over_candidate": 2.480379102757274,
+      "faster_candidate_tasks": 4,
+      "slower_candidate_tasks": 0,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.0505300420045387,
+          "candidate": 0.005763249995652586,
+          "baseline_over_candidate": 8.767629730213892
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.03358583300723694,
+          "candidate": 0.012460124999051914,
+          "baseline_over_candidate": 2.6954651746906615
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.06769733299734071,
+          "candidate": 0.03220508300000802,
+          "baseline_over_candidate": 2.1020698191438867
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.040428875014185905,
+          "candidate": 0.01784708400373347,
+          "baseline_over_candidate": 2.2652930308238868
+        }
+      ]
+    },
+    "adaptive": {
+      "matched_verified_tasks": 4,
+      "median_baseline_over_candidate": 0.8820780729560911,
+      "faster_candidate_tasks": 0,
+      "slower_candidate_tasks": 4,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.0505300420045387,
+          "candidate": 0.055498542002169415,
+          "baseline_over_candidate": 0.9104751256810224
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.03358583300723694,
+          "candidate": 0.03614383298554458,
+          "baseline_over_candidate": 0.9292272078799533
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.06769733299734071,
+          "candidate": 0.3512073750025593,
+          "baseline_over_candidate": 0.19275601201952947
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.040428875014185905,
+          "candidate": 0.0473582919803448,
+          "baseline_over_candidate": 0.8536810202311599
+        }
+      ]
+    }
+  },
+  "paired_verified_selector": {
+    "raw": {
+      "matched_verified_tasks": 4,
+      "median_baseline_over_candidate": 0.9711431299184561,
+      "faster_candidate_tasks": 1,
+      "slower_candidate_tasks": 3,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.00196004199096933,
+          "candidate": 0.00199462499585934,
+          "baseline_over_candidate": 0.9826619013790557
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.0010887499956879765,
+          "candidate": 0.001681708003161475,
+          "baseline_over_candidate": 0.6474072750092255
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.0019449579995125532,
+          "candidate": 0.0020267909858375788,
+          "baseline_over_candidate": 0.9596243584578565
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.001253541006008163,
+          "candidate": 0.0012308330042287707,
+          "baseline_over_candidate": 1.018449295478245
+        }
+      ]
+    },
+    "effective": {
+      "matched_verified_tasks": 4,
+      "median_baseline_over_candidate": 0.7391995336606492,
+      "faster_candidate_tasks": 0,
+      "slower_candidate_tasks": 4,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.00196004199096933,
+          "candidate": 0.002233625011285767,
+          "baseline_over_candidate": 0.8775161368026806
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.0010887499956879765,
+          "candidate": 0.0018119169981218874,
+          "baseline_over_candidate": 0.6008829305186177
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.0019449579995125532,
+          "candidate": 0.35163870800170116,
+          "baseline_over_candidate": 0.005531125997377808
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.001253541006008163,
+          "candidate": 0.0013893329887650907,
+          "baseline_over_candidate": 0.9022610246391498
+        }
+      ]
+    },
+    "effective_vs_raw": {
+      "matched_verified_tasks": 4,
+      "median_baseline_over_candidate": 0.8894577659101042,
+      "faster_candidate_tasks": 0,
+      "slower_candidate_tasks": 4,
+      "pairs": [
+        {
+          "task_id": "arithmetic-n4-s0",
+          "baseline": 0.00199462499585934,
+          "candidate": 0.002233625011285767,
+          "baseline_over_candidate": 0.8929990422658954
+        },
+        {
+          "task_id": "graphstate-n4-s0",
+          "baseline": 0.001681708003161475,
+          "candidate": 0.0018119169981218874,
+          "baseline_over_candidate": 0.9281374394658374
+        },
+        {
+          "task_id": "grover-n4-s0",
+          "baseline": 0.0020267909858375788,
+          "candidate": 0.35163870800170116,
+          "baseline_over_candidate": 0.005763844934351691
+        },
+        {
+          "task_id": "iqp-n4-s0",
+          "baseline": 0.0012308330042287707,
+          "candidate": 0.0013893329887650907,
+          "baseline_over_candidate": 0.8859164895543129
+        }
+      ]
+    }
+  },
+  "selector_completion_and_par2": {
+    "per_policy": {
+      "effective": {
+        "recorded_replays": 4,
+        "unique_tasks": 4,
+        "successful_verified_replays": 4,
+        "completion_rate": 1.0,
+        "par2_penalty_s_per_failure": 120.0,
+        "total_par2_s_over_recorded_replays": 0.3570735829998739,
+        "median_per_task_par2_s": 0.002022771004703827,
+        "scope": "Each timed-out, unsupported, failed, or unverified replay is assigned twice the configured timeout."
+      },
+      "fixed": {
+        "recorded_replays": 4,
+        "unique_tasks": 4,
+        "successful_verified_replays": 4,
+        "completion_rate": 1.0,
+        "par2_penalty_s_per_failure": 120.0,
+        "total_par2_s_over_recorded_replays": 0.006247290992178023,
+        "median_per_task_par2_s": 0.0015992495027603582,
+        "scope": "Each timed-out, unsupported, failed, or unverified replay is assigned twice the configured timeout."
+      },
+      "raw": {
+        "recorded_replays": 4,
+        "unique_tasks": 4,
+        "successful_verified_replays": 4,
+        "completion_rate": 1.0,
+        "par2_penalty_s_per_failure": 120.0,
+        "total_par2_s_over_recorded_replays": 0.006933956989087164,
+        "median_per_task_par2_s": 0.0018381664995104074,
+        "scope": "Each timed-out, unsupported, failed, or unverified replay is assigned twice the configured timeout."
+      }
+    },
+    "complete_matched_task_repeats": 4,
+    "par2_totals_on_common_task_repeats": {
+      "fixed": 0.006247290992178023,
+      "raw": 0.006933956989087164,
+      "effective": 0.3570735829998739
+    }
+  },
+  "paired_verified_batch": {
+    "graphstate:batch=1": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 1.067327289620924,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.0016784170002210885,
+            "candidate": 0.0015725420089438558,
+            "baseline_over_candidate": 1.067327289620924
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 21.48524986946656,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.03378645799239166,
+            "candidate": 0.0015725420089438558,
+            "baseline_over_candidate": 21.48524986946656
+          }
+        ]
+      }
+    },
+    "graphstate:batch=2": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 1.1199038975887778,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.0018302499956917018,
+            "candidate": 0.001634292013477534,
+            "baseline_over_candidate": 1.1199038975887778
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 22.278760282955506,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "graphstate-n4-s0",
+            "baseline": 0.03641000000061467,
+            "candidate": 0.001634292013477534,
+            "baseline_over_candidate": 22.278760282955506
+          }
+        ]
+      }
+    },
+    "iqp:batch=1": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 0.9333147699210191,
+        "faster_candidate_tasks": 0,
+        "slower_candidate_tasks": 1,
+        "pairs": [
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.0015395410009659827,
+            "candidate": 0.0016495410236530006,
+            "baseline_over_candidate": 0.9333147699210191
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 24.954744625047006,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.041163874993799254,
+            "candidate": 0.0016495410236530006,
+            "baseline_over_candidate": 24.954744625047006
+          }
+        ]
+      }
+    },
+    "iqp:batch=2": {
+      "shared_vs_independent": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 1.153634336395303,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.0019025829969905317,
+            "candidate": 0.0016492080176249146,
+            "baseline_over_candidate": 1.153634336395303
+          }
+        ]
+      },
+      "shared_vs_quimb_cached": {
+        "matched_verified_tasks": 1,
+        "median_baseline_over_candidate": 26.86152961732708,
+        "faster_candidate_tasks": 1,
+        "slower_candidate_tasks": 0,
+        "pairs": [
+          {
+            "task_id": "iqp-n4-s0",
+            "baseline": 0.04430025001056492,
+            "candidate": 0.0016492080176249146,
+            "baseline_over_candidate": 26.86152961732708
+          }
+        ]
+      }
+    }
+  },
+  "batch_by_task": [
+    {
+      "task_id": "graphstate-n4-s0",
+      "family": "graphstate",
+      "physical_qubits": 4,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "2": 2
+      },
+      "first_tested_shared_beats_independent_at_k": 1,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        2
+      ]
+    },
+    {
+      "task_id": "iqp-n4-s0",
+      "family": "iqp",
+      "physical_qubits": 4,
+      "unique_query_counts_by_batch_size": {
+        "1": 1,
+        "2": 2
+      },
+      "first_tested_shared_beats_independent_at_k": 2,
+      "first_tested_shared_beats_quimb_cached_at_k": 1,
+      "tested_batch_sizes": [
+        1,
+        2
+      ]
+    }
+  ],
+  "preprocess_stage_breakdown": [
+    {
+      "family": "arithmetic",
+      "strategy": "adaptive",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.01223037499585189,
+      "median_plan_s": 0.04284720798023045,
+      "median_evaluate_s": 1.2125005014240742e-05,
+      "median_other_s": 0.00040883402107283473,
+      "sum_of_stage_medians_s": 0.055498542002169415,
+      "median_end_to_end_total_s": 0.055498542002169415,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "arithmetic",
+      "strategy": "fixed",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.0007349170045927167,
+      "median_plan_s": 0.004607874987414107,
+      "median_evaluate_s": 1.1582975275814533e-05,
+      "median_other_s": 0.00040887502836994827,
+      "sum_of_stage_medians_s": 0.005763249995652586,
+      "median_end_to_end_total_s": 0.005763249995652586,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "arithmetic",
+      "strategy": "native",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.0115992909995839,
+      "median_plan_s": 0.03867212499608286,
+      "median_evaluate_s": 1.4958000974729657e-05,
+      "median_other_s": 0.0002436680078972131,
+      "sum_of_stage_medians_s": 0.0505300420045387,
+      "median_end_to_end_total_s": 0.0505300420045387,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "graphstate",
+      "strategy": "adaptive",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.007362501026364043,
+      "median_plan_s": 0.028543748980155215,
+      "median_evaluate_s": 1.0457995813339949e-05,
+      "median_other_s": 0.00022712498321197927,
+      "sum_of_stage_medians_s": 0.03614383298554458,
+      "median_end_to_end_total_s": 0.03614383298554458,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "graphstate",
+      "strategy": "fixed",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.0006953749980311841,
+      "median_plan_s": 0.011469332996057346,
+      "median_evaluate_s": 1.220798003487289e-05,
+      "median_other_s": 0.0002832090249285102,
+      "sum_of_stage_medians_s": 0.012460124999051914,
+      "median_end_to_end_total_s": 0.012460124999051914,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "graphstate",
+      "strategy": "native",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.007142624992411584,
+      "median_plan_s": 0.02635254099732265,
+      "median_evaluate_s": 1.1666998034343123e-05,
+      "median_other_s": 7.90000194683671e-05,
+      "sum_of_stage_medians_s": 0.03358583300723694,
+      "median_end_to_end_total_s": 0.03358583300723694,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "grover",
+      "strategy": "adaptive",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.012961874948814511,
+      "median_plan_s": 0.3374731259827968,
+      "median_evaluate_s": 0.00020045897690579295,
+      "median_other_s": 0.0005719150940421969,
+      "sum_of_stage_medians_s": 0.3512073750025593,
+      "median_end_to_end_total_s": 0.3512073750025593,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "grover",
+      "strategy": "fixed",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.0011081660049967468,
+      "median_plan_s": 0.030486000003293157,
+      "median_evaluate_s": 0.00016562500968575478,
+      "median_other_s": 0.00044529198203235865,
+      "sum_of_stage_medians_s": 0.03220508300000802,
+      "median_end_to_end_total_s": 0.03220508300000802,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "grover",
+      "strategy": "native",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.011352333996910602,
+      "median_plan_s": 0.055867457995191216,
+      "median_evaluate_s": 0.00021358300000429153,
+      "median_other_s": 0.0002639580052345991,
+      "sum_of_stage_medians_s": 0.06769733299734071,
+      "median_end_to_end_total_s": 0.06769733299734071,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "iqp",
+      "strategy": "adaptive",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.008975040982477367,
+      "median_plan_s": 0.0381074589677155,
+      "median_evaluate_s": 1.200000406242907e-05,
+      "median_other_s": 0.00026379202608950436,
+      "sum_of_stage_medians_s": 0.0473582919803448,
+      "median_end_to_end_total_s": 0.0473582919803448,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "iqp",
+      "strategy": "fixed",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.000665667001157999,
+      "median_plan_s": 0.01675458298996091,
+      "median_evaluate_s": 0.00014124999870546162,
+      "median_other_s": 0.0002855840139091015,
+      "sum_of_stage_medians_s": 0.01784708400373347,
+      "median_end_to_end_total_s": 0.01784708400373347,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    },
+    {
+      "family": "iqp",
+      "strategy": "native",
+      "records": 1,
+      "successful_records": 1,
+      "verified_records": 1,
+      "median_prepare_s": 0.007820083003025502,
+      "median_plan_s": 0.03251345898024738,
+      "median_evaluate_s": 1.0457995813339949e-05,
+      "median_other_s": 8.487503509968519e-05,
+      "sum_of_stage_medians_s": 0.040428875014185905,
+      "median_end_to_end_total_s": 0.040428875014185905,
+      "aggregation_note": "Stage medians are computed independently; their sum need not equal the median end-to-end time."
+    }
+  ],
+  "structure_performance_tradeoffs": {
+    "comparison": "structure reduced -> rank candidate; timings compare full adaptive and native workflows",
+    "counts": {
+      "tasks_with_rank_step_metrics": 4,
+      "rank_decrease_tasks": 0,
+      "L_increase_at_rank_step_tasks": 0,
+      "estimated_combo_comparable_at_rank_step_tasks": 0,
+      "estimated_combo_increase_at_rank_step_tasks": 0,
+      "estimated_combo_comparable_all_tasks": 4,
+      "estimated_combo_increase_all_tasks": 0
+    },
+    "verified_slowdown_examples": [],
+    "example_selection": "Top three adaptive/native median-time ratios among rank-decrease tasks with all matched repeats verified.",
+    "interpretation": "A smaller rank or L does not establish a runtime cause; adaptive total includes candidate generation, planning, evaluation, and task overhead."
+  },
+  "selection_fold_count": 4,
+  "selection_oof_summary": {
+    "fixed": {
+      "tasks": 4,
+      "completed": 4,
+      "median_estimated_total_s": 0.001624312499188818,
+      "median_oracle_regret": 1.0
+    },
+    "raw": {
+      "tasks": 4,
+      "completed": 4,
+      "median_estimated_total_s": 0.0018272500019520521,
+      "median_oracle_regret": 1.0
+    },
+    "effective": {
+      "tasks": 4,
+      "completed": 4,
+      "median_estimated_total_s": 0.002076645498163998,
+      "median_oracle_regret": 1.2611542276276797
+    }
+  },
+  "scope_note": "Run-local measurements on the recorded CPU and workload only; no general speedup claim is inferred from structure metrics."
+}
